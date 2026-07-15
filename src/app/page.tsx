@@ -4,17 +4,20 @@ import {
   BarChart3,
   Check,
   Clock3,
+  GraduationCap,
   Printer,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import { GradeCalculator } from "@/components/grade-calculator";
+import Link from "next/link";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 const faqs = [
   {
     question: "How do I calculate a test grade?",
     answer:
-      "Subtract the number of wrong answers from the total questions, divide the correct answers by the total, then multiply by 100. GradeKit does this instantly and builds the full grading chart for you.",
+      "Subtract the number of wrong answers from the total questions, divide the correct answers by the total, then multiply by 100. Grade calcular does this instantly and builds the full grading chart for you.",
   },
   {
     question: "Can I grade assignments with half or quarter points?",
@@ -27,7 +30,7 @@ const faqs = [
       "The default US scale uses A at 93%, A− at 90%, B+ at 87%, and so on. You can switch to strict or lenient presets, or change each threshold with a custom scale.",
   },
   {
-    question: "Does GradeKit save or upload student data?",
+    question: "Does Grade calcular save or upload student data?",
     answer:
       "No student data is requested. Calculations happen in your browser. Your calculator preferences may be saved locally on your own device for convenience.",
   },
@@ -38,8 +41,22 @@ export default function Home() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        name: "Grade calcular",
+        url: "https://gradecalculators.site/",
+        logo: "https://gradecalculators.site/grade-calcular-logo.svg",
+      },
+      {
+        "@type": "WebSite",
+        name: "Grade calcular",
+        url: "https://gradecalculators.site/",
+        publisher: { "@type": "Organization", name: "Grade calcular" },
+      },
+      {
         "@type": "WebApplication",
-        name: "GradeKit Grade Calculator",
+        name: "Grade calcular",
+        url: "https://gradecalculators.site/grade-calculator/",
+        publisher: { "@type": "Organization", name: "Grade calcular" },
         applicationCategory: "EducationalApplication",
         operatingSystem: "Any",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -59,21 +76,7 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <header className="site-header">
-        <div className="shell nav-wrap">
-          <a className="brand" href="#top" aria-label="GradeKit home">
-            <span className="brand-mark" aria-hidden="true"><Check size={19} strokeWidth={3} /></span>
-            <span>Grade<span>Kit</span></span>
-          </a>
-          <nav className="desktop-nav" aria-label="Primary navigation">
-            <a href="#calculator">Calculator</a>
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How it works</a>
-            <a href="#faq">FAQ</a>
-          </nav>
-          <a className="nav-cta" href="#calculator">Start grading <ArrowRight size={16} /></a>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="hero">
@@ -87,8 +90,8 @@ export default function Home() {
                 Turn wrong answers into accurate grades in seconds. Get the score, letter grade, and a complete printable chart—without spreadsheets or guesswork.
               </p>
               <div className="hero-actions">
-                <a className="primary-button" href="#calculator">Calculate a grade <ArrowRight size={18} /></a>
-                <a className="text-button" href="#how-it-works">See how it works</a>
+                <Link className="primary-button" href="/grade-calculator/">Calculate a grade <ArrowRight size={18} /></Link>
+                <Link className="text-button" href="/how-to-calculate-grades/">See how it works</Link>
               </div>
               <div className="trust-row">
                 <span><BadgeCheck size={18} /> No sign-up</span>
@@ -125,16 +128,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="calculator-section" id="calculator">
+        <section className="route-directory-section">
           <div className="shell">
-            <div className="section-heading calculator-heading">
-              <div>
-                <span className="section-kicker">EASY GRADER</span>
-                <h2>Your complete grading desk.</h2>
-              </div>
-              <p>Enter the total and wrong answers. Everything else updates instantly.</p>
+            <div className="section-heading centered-heading route-heading">
+              <span className="section-kicker">GRADING RESOURCES</span>
+              <h2>Start with what you need.</h2>
+              <p>Each tool and guide now has its own clear, bookmarkable URL.</p>
             </div>
-            <GradeCalculator />
+            <div className="route-card-grid">
+              <Link className="route-card route-card-primary" href="/grade-calculator/">
+                <span><GraduationCap size={23} /></span><div><small>INTERACTIVE TOOL</small><h3>Grade calculator</h3><p>Calculate percentages, letter grades, bonus points, and fractional scores.</p></div><ArrowRight size={19} />
+              </Link>
+              <Link className="route-card" href="/grade-chart/">
+                <span><BarChart3 size={23} /></span><div><small>PRINTABLE RESOURCE</small><h3>Grade chart</h3><p>Understand and create a complete score chart for any test.</p></div><ArrowRight size={19} />
+              </Link>
+              <Link className="route-card" href="/grading-scale/">
+                <span><Sparkles size={23} /></span><div><small>REFERENCE GUIDE</small><h3>Grading scale</h3><p>Review standard US percentage and letter-grade thresholds.</p></div><ArrowRight size={19} />
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -185,7 +196,7 @@ export default function Home() {
               <span className="section-kicker">HOW IT WORKS</span>
               <h2>From answer sheet to final score in three steps.</h2>
               <p>No account, setup wizard, or complicated formula. Just the numbers you already have.</p>
-              <a className="primary-button" href="#calculator">Try the calculator <ArrowRight size={18} /></a>
+              <Link className="primary-button" href="/grade-calculator/">Try the calculator <ArrowRight size={18} /></Link>
             </div>
             <ol className="steps-list">
               <li><span>01</span><div><h3>Enter the total</h3><p>Add the number of questions or total possible points.</p></div></li>
@@ -233,22 +244,12 @@ export default function Home() {
               <h2>One less thing to calculate.</h2>
               <p>Free, private, and ready whenever the answer sheets pile up.</p>
             </div>
-            <a className="light-button" href="#calculator">Open the calculator <ArrowRight size={18} /></a>
+            <Link className="light-button" href="/grade-calculator/">Open the calculator <ArrowRight size={18} /></Link>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer">
-        <div className="shell footer-grid">
-          <div>
-            <a className="brand footer-brand" href="#top"><span className="brand-mark"><Check size={19} strokeWidth={3} /></span><span>Grade<span>Kit</span></span></a>
-            <p>A calmer, quicker grading companion for teachers, tutors, and students.</p>
-          </div>
-          <div className="footer-links"><strong>Product</strong><a href="#calculator">Calculator</a><a href="#features">Features</a><a href="#how-it-works">How it works</a></div>
-          <div className="footer-links"><strong>Resources</strong><a href="#faq">FAQ</a><a href="#formula">Grade formula</a><a href="#calculator">Grading chart</a></div>
-        </div>
-        <div className="shell footer-bottom"><span>© {new Date().getFullYear()} GradeKit</span><span>Made for better teaching days.</span></div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

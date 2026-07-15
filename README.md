@@ -1,4 +1,4 @@
-# GradeKit
+# Grade calcular
 
 A modern, static-exportable grade calculator built with Next.js and TypeScript.
 

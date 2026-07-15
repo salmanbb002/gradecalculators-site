@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gradecalculators.site"),
-  title: "Grade Calculator — Free Easy Grader & Grade Chart | GradeKit",
+  title: "Grade Calculator — Free Easy Grader & Grade Chart | Grade calcular",
   description:
     "Calculate test, quiz, and assignment grades instantly. Create a printable grade chart with custom scales, half points, quarter points, and letter grades.",
   keywords: [
@@ -14,18 +14,22 @@ export const metadata: Metadata = {
     "teacher grade calculator",
   ],
   openGraph: {
-    title: "GradeKit — The fast, flexible grade calculator",
+    title: "Grade calcular — The fast, flexible grade calculator",
     description: "Instant grades, custom scales, and printable charts for teachers.",
     type: "website",
     url: "/",
-    siteName: "GradeKit",
+    siteName: "Grade calcular",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GradeKit — Free Grade Calculator",
+    title: "Grade calcular — Free Grade Calculator",
     description: "Grade faster with instant scores and flexible grading charts.",
   },
-  icons: { icon: "/favicon.svg" },
+  alternates: { canonical: "/" },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+  },
 };
 
 export const viewport: Viewport = {
