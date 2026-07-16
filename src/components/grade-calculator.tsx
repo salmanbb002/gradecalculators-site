@@ -28,7 +28,7 @@ import {
 type PointStep = 1 | 0.5 | 0.25;
 type DecimalPlaces = 0 | 1 | 2;
 
-const STORAGE_KEY = "grade-calcular-preferences-v2";
+const STORAGE_KEY = "grade-calculator-preferences-v3";
 
 function normalize(value: number, step: number) {
   return Math.round(value / step) * step;

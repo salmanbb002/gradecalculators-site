@@ -22,7 +22,7 @@ export function SiteFooter() {
           <Link href="/">Home</Link>
         </div>
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Grade calcular</span><span>Made for better teaching days.</span></div>
+      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Grade Calculator</span><span>Made for better teaching days.</span></div>
     </footer>
   );
 }

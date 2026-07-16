@@ -7,7 +7,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Free Grade Calculator & Easy Grader | Grade calcular",
+  title: "Free Grade Calculator & Easy Grader | Grade Calculator",
   description: "Use this free grade calculator to convert wrong answers into percentages and letter grades. Create a complete grade chart with custom scales and fractional points.",
   alternates: { canonical: "/grade-calculator/" },
   openGraph: { title: "Free Grade Calculator & Easy Grader", url: "/grade-calculator/" },
@@ -25,7 +25,7 @@ export default function GradeCalculatorPage() {
     "@graph": [
       {
         "@type": "WebApplication",
-        name: "Grade calcular — Free Grade Calculator",
+        name: "Grade Calculator — Free Easy Grader",
         url: "https://gradecalculators.site/grade-calculator/",
         applicationCategory: "EducationalApplication",
         operatingSystem: "Any",

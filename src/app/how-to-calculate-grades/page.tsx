@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "How to Calculate Grades: Formula & Examples | Grade calcular",
+  title: "How to Calculate Grades: Formula & Examples | Grade Calculator",
   description: "Learn how to calculate a test grade using the correct-answer formula. Follow three simple steps and see worked examples for questions, points, and bonus credit.",
   alternates: { canonical: "/how-to-calculate-grades/" },
   openGraph: { title: "How to Calculate Grades: Formula and Examples", url: "/how-to-calculate-grades/" },

@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Grade Calculator FAQ: Grades, Charts & Scales | Grade calcular",
+  title: "Grade Calculator FAQ: Grades, Charts & Scales",
   description: "Get answers about calculating test grades, fractional points, bonus credit, rounding, letter-grade scales, printable charts, and calculator privacy.",
   alternates: { canonical: "/faq/" },
   openGraph: { title: "Grade Calculator Frequently Asked Questions", url: "/faq/" },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const questions = [
   ["How do I calculate a grade from wrong answers?", "Subtract wrong answers from total questions, divide the correct answers by the total, and multiply by 100. For 25 questions with 2 wrong: 23 ÷ 25 × 100 = 92%."],
   ["What is an easy grader?", "An easy grader is a tool that creates percentages and letter grades from the total questions and the number missed. It also produces a chart of every possible score."],
-  ["Can I calculate grades with half points?", "Yes. Grade calcular supports whole, half, and quarter-point precision for projects, rubrics, and assignments with partial credit."],
+  ["Can I calculate grades with half points?", "Yes. Grade Calculator supports whole, half, and quarter-point precision for projects, rubrics, and assignments with partial credit."],
   ["How are bonus points calculated?", "Bonus points are added to earned points before dividing by the total possible points. A result can exceed 100% when bonus credit is included."],
   ["Should grades be rounded?", "Rounding depends on the instructor or school policy. The calculator can display zero, one, or two decimal places so the result follows the required policy."],
   ["What percentage is an A?", "On the default standard US scale, an A begins at 93% and an A− begins at 90%. Other schools may use 90% or 95% as the minimum for an A."],

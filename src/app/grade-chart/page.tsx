@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Grade Chart: Percentage & Letter Grade Table | Grade calcular",
+  title: "Grade Chart: Percentage & Letter Grade Table | Grade Calculator",
   description: "Use a grade chart to match wrong answers with percentages and letter grades. See a printable 10-question example and generate a chart for any test size.",
   alternates: { canonical: "/grade-chart/" },
   openGraph: { title: "Grade Chart: Percentage and Letter Grade Table", url: "/grade-chart/" },

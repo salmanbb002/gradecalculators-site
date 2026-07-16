@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How do I calculate a test grade?",
     answer:
-      "Subtract the number of wrong answers from the total questions, divide the correct answers by the total, then multiply by 100. Grade calcular does this instantly and builds the full grading chart for you.",
+      "Subtract the number of wrong answers from the total questions, divide the correct answers by the total, then multiply by 100. Grade Calculator does this instantly and builds the full grading chart for you.",
   },
   {
     question: "Can I grade assignments with half or quarter points?",
@@ -30,7 +30,7 @@ const faqs = [
       "The default US scale uses A at 93%, A− at 90%, B+ at 87%, and so on. You can switch to strict or lenient presets, or change each threshold with a custom scale.",
   },
   {
-    question: "Does Grade calcular save or upload student data?",
+    question: "Does Grade Calculator save or upload student data?",
     answer:
       "No student data is requested. Calculations happen in your browser. Your calculator preferences may be saved locally on your own device for convenience.",
   },
@@ -42,21 +42,21 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Grade calcular",
+        name: "Grade Calculator",
         url: "https://gradecalculators.site/",
-        logo: "https://gradecalculators.site/grade-calcular-logo.svg",
+        logo: "https://gradecalculators.site/grade-calculator-logo.svg",
       },
       {
         "@type": "WebSite",
-        name: "Grade calcular",
+        name: "Grade Calculator",
         url: "https://gradecalculators.site/",
-        publisher: { "@type": "Organization", name: "Grade calcular" },
+        publisher: { "@type": "Organization", name: "Grade Calculator" },
       },
       {
         "@type": "WebApplication",
-        name: "Grade calcular",
+        name: "Grade Calculator",
         url: "https://gradecalculators.site/grade-calculator/",
-        publisher: { "@type": "Organization", name: "Grade calcular" },
+        publisher: { "@type": "Organization", name: "Grade Calculator" },
         applicationCategory: "EducationalApplication",
         operatingSystem: "Any",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
