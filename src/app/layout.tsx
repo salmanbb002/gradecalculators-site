@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     description: "Grade faster with instant scores and flexible grading charts.",
   },
   alternates: { canonical: "/" },
+  verification: {
+    google: "I82wwuReWsYHulatQqSNg8OYkQLTlc0e-ZDULFUXtI4",
+  },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: "/favicon.svg",
