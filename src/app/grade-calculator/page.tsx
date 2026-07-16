@@ -39,6 +39,14 @@ export default function GradeCalculatorPage() {
           { "@type": "ListItem", position: 2, name: "Grade Calculator", item: "https://gradecalculators.site/grade-calculator/" },
         ],
       },
+      {
+        "@type": "FAQPage",
+        mainEntity: faq.map(([question, answer]) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
+      },
     ],
   };
 
@@ -78,12 +86,20 @@ export default function GradeCalculatorPage() {
                 <div><CheckCircle2 size={21} /><span><b>Fractional and bonus points</b><small>Grade projects with whole, half, or quarter points.</small></span></div>
                 <div><Printer size={21} /><span><b>Print-ready grade chart</b><small>Keep a clean reference beside your answer sheets.</small></span></div>
               </div>
+              <h2>What is an easy grader?</h2>
+              <p>An easy grader is a classroom tool that converts total questions and wrong answers into the number correct, percentage score, and letter grade. It also creates a grading chart for every possible raw score, which helps teachers grade quizzes, tests, and exams without calculating each answer sheet separately.</p>
+              <h2>Question-based grades vs. point-based grades</h2>
+              <p>For equal-value questions, enter the number of questions as the total and count the answers missed. For essays, projects, labs, and rubric-based assignments, enter total possible points and points missed instead. The percentage formula is the same, but point-based grading supports partial credit.</p>
+              <div className="reference-table-wrap"><table className="reference-table"><thead><tr><th>Assessment</th><th>Enter as total</th><th>Enter as wrong</th></tr></thead><tbody><tr><td>25-question quiz</td><td>25 questions</td><td>Questions missed</td></tr><tr><td>40-point project</td><td>40 points</td><td>Points deducted</td></tr><tr><td>20-point rubric</td><td>20 points</td><td>Whole or fractional points lost</td></tr></tbody></table></div>
+              <h2>Use the result with the correct policy</h2>
+              <p>The calculator provides the arithmetic, while the syllabus or school policy determines the official result. Confirm the assigned A–F grading scale, decimal precision, rounding method, late penalties, extra credit, and whether scores above 100% are capped.</p>
             </article>
             <aside className="related-panel">
               <span>RELATED GUIDES</span>
               <Link href="/grade-chart/"><b>Grade chart guide</b><small>See how every score is organized.</small><ArrowRight size={16} /></Link>
               <Link href="/how-to-calculate-grades/"><b>How to calculate grades</b><small>Learn the formula with examples.</small><ArrowRight size={16} /></Link>
               <Link href="/grading-scale/"><b>US grading scale</b><small>Compare percentage thresholds.</small><ArrowRight size={16} /></Link>
+              <Link href="/blog/grade-rounding-rules/"><b>Grade rounding rules</b><small>Understand scores near a boundary.</small><ArrowRight size={16} /></Link>
             </aside>
           </div>
         </section>

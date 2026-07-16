@@ -4,14 +4,16 @@ import {
   BarChart3,
   Check,
   Clock3,
-  GraduationCap,
   Printer,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
+import { BlogCard } from "@/components/blog-card";
+import { HomepageTools } from "@/components/homepage-tools";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { blogPosts } from "@/lib/blog";
 
 const faqs = [
   {
@@ -128,26 +130,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="route-directory-section">
-          <div className="shell">
-            <div className="section-heading centered-heading route-heading">
-              <span className="section-kicker">GRADING RESOURCES</span>
-              <h2>Start with what you need.</h2>
-              <p>Each tool and guide now has its own clear, bookmarkable URL.</p>
-            </div>
-            <div className="route-card-grid">
-              <Link className="route-card route-card-primary" href="/grade-calculator/">
-                <span><GraduationCap size={23} /></span><div><small>INTERACTIVE TOOL</small><h3>Grade calculator</h3><p>Calculate percentages, letter grades, bonus points, and fractional scores.</p></div><ArrowRight size={19} />
-              </Link>
-              <Link className="route-card" href="/grade-chart/">
-                <span><BarChart3 size={23} /></span><div><small>PRINTABLE RESOURCE</small><h3>Grade chart</h3><p>Understand and create a complete score chart for any test.</p></div><ArrowRight size={19} />
-              </Link>
-              <Link className="route-card" href="/grading-scale/">
-                <span><Sparkles size={23} /></span><div><small>REFERENCE GUIDE</small><h3>Grading scale</h3><p>Review standard US percentage and letter-grade thresholds.</p></div><ArrowRight size={19} />
-              </Link>
-            </div>
-          </div>
-        </section>
+        <HomepageTools />
 
         <section className="proof-strip" aria-label="Product benefits">
           <div className="shell proof-grid">
@@ -155,6 +138,24 @@ export default function Home() {
             <div><strong>0</strong><span>student data collected</span></div>
             <div><strong>500</strong><span>questions supported</span></div>
             <div><strong>3</strong><span>point precision modes</span></div>
+          </div>
+        </section>
+
+        <section className="semantic-home-section">
+          <div className="shell semantic-home-grid">
+            <div className="semantic-intro">
+              <span className="section-kicker">GRADE CALCULATOR EXPLAINED</span>
+              <h2>What is a grade calculator?</h2>
+              <p className="answer-lede">A grade calculator converts a raw score—such as correct answers or points earned—into a percentage score and letter grade. An easy grader can also generate a full grading chart that matches every number of wrong answers with the corresponding result.</p>
+              <p>Use it for quizzes, tests, exams, homework, rubrics, and classroom assignments. Teachers can grade answer sheets faster, while students, parents, and tutors can check a score or understand how many questions may be missed.</p>
+              <Link className="inline-link" href="/how-to-calculate-grades/">Learn the grade percentage formula <ArrowRight size={16} /></Link>
+            </div>
+            <div className="semantic-card-grid">
+              <article><span>01</span><h3>Question-based grades</h3><p>Enter total questions and wrong answers. The calculator finds correct answers, percentage, and the matching A–F grade.</p></article>
+              <article><span>02</span><h3>Point-based assignments</h3><p>Use earned or missed points for projects, labs, essays, and rubrics with whole, half, or quarter-point scoring.</p></article>
+              <article><span>03</span><h3>Custom grade scales</h3><p>Compare standard, strict, and lenient percentage thresholds or customize the minimum score for each letter grade.</p></article>
+              <article><span>04</span><h3>Printable grade charts</h3><p>Generate every possible raw score for tests from 1 to 500 questions and keep a quick grading reference nearby.</p></article>
+            </div>
           </div>
         </section>
 
@@ -216,6 +217,16 @@ export default function Home() {
             <div className="formula-box" aria-label="Grade percentage formula">
               <span>Grade %</span><strong>=</strong><div><b>Total − Wrong + Bonus</b><i /><b>Total</b></div><strong>× 100</strong>
             </div>
+          </div>
+        </section>
+
+        <section className="blog-section">
+          <div className="shell">
+            <div className="blog-section-head">
+              <div><span className="section-kicker">FROM THE GRADING BLOG</span><h2>Answers beyond the calculator.</h2><p>Practical explanations for the grading questions that come up after the score is calculated.</p></div>
+              <Link className="text-button" href="/blog/">View all grading guides</Link>
+            </div>
+            <div className="blog-grid">{blogPosts.map((post) => <BlogCard post={post} key={post.slug} />)}</div>
           </div>
         </section>
 

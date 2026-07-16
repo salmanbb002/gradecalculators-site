@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "How to Calculate Grades: Formula & Examples | Grade Calculator",
+  title: "Calculate Grades: Formula & Examples | Grade Calculator",
   description: "Learn how to calculate a test grade using the correct-answer formula. Follow three simple steps and see worked examples for questions, points, and bonus credit.",
   alternates: { canonical: "/how-to-calculate-grades/" },
   openGraph: { title: "How to Calculate Grades: Formula and Examples", url: "/how-to-calculate-grades/" },
@@ -33,9 +33,12 @@ export default function HowToCalculateGradesPage() {
             <h2>Calculate a test grade in three steps</h2>
             <ol className="article-steps large-steps"><li><span>1</span><div><h3>Find the points earned</h3><p>Subtract wrong answers or missed points from the total possible points. For 25 questions with 2 wrong, the student earned 23 points.</p></div></li><li><span>2</span><div><h3>Divide earned points by the total</h3><p>Divide 23 by 25. The result is 0.92.</p></div></li><li><span>3</span><div><h3>Multiply by 100</h3><p>Multiply 0.92 by 100 to get a final score of 92%.</p></div></li></ol>
             <h2>Grade calculation examples</h2><div className="example-grid"><div><span>20 questions, 3 wrong</span><strong>17 ÷ 20 × 100 = 85%</strong><small>Letter grade: B</small></div><div><span>40 points, 5.5 missed</span><strong>34.5 ÷ 40 × 100 = 86.25%</strong><small>Letter grade: B</small></div><div><span>50 points, 4 bonus</span><strong>54 ÷ 50 × 100 = 108%</strong><small>Bonus score above 100%</small></div></div>
+            <h2>Raw scores, percentages, and letter grades</h2><p>A raw score is the number of questions correct or points earned. The percentage expresses that raw score out of 100. The grading scale then assigns a letter grade to the percentage. For example, 18 correct out of 20 is a raw score of 18/20, a percentage of 90%, and a letter grade determined by the course scale.</p>
+            <h2>How to calculate a weighted grade</h2><p>For weighted categories, multiply each category average by its decimal weight, then add the results. If exams are 50% of the course and the exam average is 88%, that category contributes 44 points to the final percentage. Repeat the process for quizzes, homework, projects, and participation.</p>
+            <h2>When rounding changes the result</h2><p>Keep the full decimal while calculating and round only when the grading policy says to do so. A displayed 89.5% may round to 90% under one policy and remain below an A− threshold under another. The syllabus determines the official method.</p>
             <Link className="primary-button article-cta" href="/grade-calculator/">Calculate your grade <ArrowRight size={18} /></Link>
           </article>
-          <aside className="related-panel"><span>RELATED RESOURCES</span><Link href="/grade-calculator/"><b>Grade calculator</b><small>Skip the manual math.</small><ArrowRight size={16} /></Link><Link href="/grade-chart/"><b>Grade chart</b><small>See every possible score.</small><ArrowRight size={16} /></Link><Link href="/grading-scale/"><b>Letter-grade scale</b><small>Convert percentages to letters.</small><ArrowRight size={16} /></Link></aside>
+          <aside className="related-panel"><span>RELATED RESOURCES</span><Link href="/grade-calculator/"><b>Grade calculator</b><small>Skip the manual math.</small><ArrowRight size={16} /></Link><Link href="/grade-chart/"><b>Grade chart</b><small>See every possible score.</small><ArrowRight size={16} /></Link><Link href="/blog/weighted-vs-unweighted-grades/"><b>Weighted vs. unweighted</b><small>Calculate course categories.</small><ArrowRight size={16} /></Link><Link href="/grading-scale/"><b>Letter-grade scale</b><small>Convert percentages to letters.</small><ArrowRight size={16} /></Link></aside>
         </div></section>
       </main>
       <SiteFooter />

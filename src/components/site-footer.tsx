@@ -18,8 +18,9 @@ export function SiteFooter() {
         <div className="footer-links">
           <strong>Learn</strong>
           <Link href="/how-to-calculate-grades/">How to calculate grades</Link>
+          <Link href="/blog/">Grading blog</Link>
           <Link href="/faq/">Grade calculator FAQ</Link>
-          <Link href="/">Home</Link>
+          <Link href="/blog/how-many-questions-can-you-miss/">How many questions can you miss?</Link>
         </div>
       </div>
       <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Grade Calculator</span><span>Made for better teaching days.</span></div>
