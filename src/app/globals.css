@@ -1486,6 +1486,14 @@ a {
   padding-block: 90px;
 }
 
+.explore-section {
+  padding-block: 110px;
+}
+
+.explore-section .route-card-grid {
+  margin-top: 50px;
+}
+
 .formula-card {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1698,8 +1706,8 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 0.7fr 0.7fr;
-  gap: 70px;
+  grid-template-columns: 1.3fr 0.7fr 0.7fr 0.7fr;
+  gap: 50px;
 }
 
 .footer-brand {
@@ -3109,6 +3117,144 @@ a {
   font-size: 12px;
 }
 
+.gpa-weighted-row {
+  border-top: 0;
+  margin-bottom: 4px;
+}
+
+.course-row-list {
+  display: grid;
+  gap: 12px;
+  padding-block: 18px;
+}
+
+.course-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: white;
+  padding: 10px;
+}
+
+.term-row {
+  padding-block: 12px;
+}
+
+.course-row-fields {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.term-label {
+  color: #333c55;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.course-grade-select {
+  flex: 0 0 76px;
+}
+
+.course-type-select {
+  flex: 1.4;
+  min-width: 0;
+}
+
+.course-row-fields .select-wrap select {
+  min-height: 42px;
+  padding-right: 30px;
+  font-size: 11px;
+}
+
+.course-row-fields .select-wrap svg {
+  right: 10px;
+}
+
+.course-credits-input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  border: 1px solid #daddE8;
+  border-radius: 10px;
+  outline: 0;
+  background: white;
+  color: var(--ink);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  -moz-appearance: textfield;
+}
+
+.course-credits-input::-webkit-inner-spin-button,
+.course-credits-input::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.course-credits-input:focus {
+  border-color: #9188ff;
+}
+
+.course-remove-button {
+  display: grid;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #9298aa;
+  cursor: pointer;
+}
+
+.course-remove-button:hover:not(:disabled) {
+  background: #fbe9e8;
+  color: #ef665d;
+}
+
+.course-remove-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.add-course-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  border: 1px dashed #c7cbe0;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--purple);
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.add-course-button:hover {
+  border-color: var(--purple);
+  background: var(--purple-soft);
+}
+
+.gpa-result-summary {
+  grid-template-columns: 150px 1fr;
+}
+
+.gpa-ring {
+  --score: 360deg;
+  --ring-color: #6558f5;
+}
+
 @media (max-width: 1020px) {
   .desktop-nav {
     gap: 20px;
@@ -3283,6 +3429,20 @@ a {
 @media (max-width: 620px) {
   .shell {
     width: min(100% - 28px, 1180px);
+  }
+
+  .course-row {
+    flex-wrap: wrap;
+  }
+
+  .course-row-fields {
+    flex-wrap: wrap;
+  }
+
+  .course-grade-select,
+  .course-type-select,
+  .course-credits-input {
+    flex: 1 1 90px;
   }
 
   .nav-wrap {

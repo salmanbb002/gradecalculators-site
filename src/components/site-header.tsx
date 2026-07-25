@@ -4,9 +4,9 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const navigation = [
   ["Calculator", "/grade-calculator/"],
+  ["GPA calculator", "/gpa-calculator/"],
   ["Grade chart", "/grade-chart/"],
   ["Grade scale", "/grading-scale/"],
-  ["How it works", "/how-to-calculate-grades/"],
   ["Blog", "/blog/"],
   ["FAQ", "/faq/"],
 ];

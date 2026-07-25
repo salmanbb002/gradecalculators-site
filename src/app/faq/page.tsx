@@ -26,6 +26,12 @@ const questions = [
   ["What is the difference between a raw score and a percentage?", "A raw score is the points earned or questions correct, such as 18 out of 20. A percentage converts that fraction to a score out of 100, so 18 out of 20 equals 90%."],
   ["Are weighted grades calculated differently?", "Yes. Multiply each category average by its assigned weight and add the weighted results. Assignment points, category weights, and weighted GPA are separate concepts."],
   ["Can a grade be higher than 100%?", "Yes, when bonus or extra-credit points are added without increasing the regular points possible. An instructor or gradebook may cap the official result at 100%."],
+  ["What is GPA and how is it different from a grade?", "A grade is a single course's result. GPA (grade point average) converts every course's letter grade into grade points, multiplies by credit hours, and averages across a term or transcript. Use the grade calculator for one course and the GPA calculator for your overall average."],
+  ["What is the difference between weighted and unweighted GPA?", "Unweighted GPA caps every course at 4.0. Weighted GPA adds bonus points — commonly +0.5 for Honors and +1.0 for AP or IB — so harder courses can contribute more than 4.0 grade points per credit."],
+  ["How do I calculate the score I need on my final exam?", "Use the final grade calculator: enter your current course grade, the final exam's weight, and your target grade. It solves for the exact score needed on the final."],
+  ["Is cumulative GPA the same as semester GPA?", "No. Semester GPA covers one term's courses. Cumulative GPA combines quality points and credit hours from every completed term into one running average, which is what appears on an official transcript."],
+  ["Do AP and Honors classes always add the same GPA bonus?", "No. The +1.0 (AP/IB) and +0.5 (Honors) bonus used by this calculator is a common convention, but schools vary — some cap the weighted scale, use different bonus values, or weight only certain course types."],
+  ["Does a low grade in one class ruin my GPA?", "It depends on the course's credit hours and how many total credit hours you have completed. A single low grade in a high-credit course early in your academic career affects cumulative GPA more than the same grade later, once more credits have accumulated."],
 ];
 
 export default function FaqPage() {
@@ -35,7 +41,7 @@ export default function FaqPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <SiteHeader />
       <main className="inner-page">
-        <section className="page-hero"><div className="shell"><Breadcrumbs current="FAQ" /><span className="section-kicker">FREQUENTLY ASKED</span><h1>Grade Calculator FAQ</h1><p>Clear answers about test grades, grade charts, percentage formulas, fractional points, letter-grade scales, bonus credit, weighted categories, rounding, and calculator privacy.</p><div className="updated-note">13 common questions · Updated July 16, 2026</div></div></section>
+        <section className="page-hero"><div className="shell"><Breadcrumbs current="FAQ" /><span className="section-kicker">FREQUENTLY ASKED</span><h1>Grade Calculator FAQ</h1><p>Clear answers about test grades, grade charts, percentage formulas, fractional points, letter-grade scales, bonus credit, weighted categories, rounding, GPA, final exams, and calculator privacy.</p><div className="updated-note">19 common questions · Updated July 26, 2026</div></div></section>
         <section className="page-faq-section faq-page-content"><div className="shell narrow-content"><div className="faq-list">{questions.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div><div className="faq-bottom-cta"><h2>Ready to calculate a grade?</h2><p>Enter two numbers and get the percentage, letter grade, and complete chart instantly.</p><Link className="primary-button" href="/grade-calculator/">Open grade calculator <ArrowRight size={18} /></Link></div></div></section>
       </main>
       <SiteFooter />

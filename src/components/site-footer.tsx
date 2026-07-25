@@ -14,6 +14,14 @@ export function SiteFooter() {
           <Link href="/grade-calculator/">Grade calculator</Link>
           <Link href="/grade-chart/">Printable grade chart</Link>
           <Link href="/grading-scale/">US grading scale</Link>
+          <Link href="/final-grade-calculator/">Final grade calculator</Link>
+        </div>
+        <div className="footer-links">
+          <strong>GPA calculators</strong>
+          <Link href="/gpa-calculator/">GPA calculator</Link>
+          <Link href="/high-school-gpa-calculator/">High school GPA</Link>
+          <Link href="/college-gpa-calculator/">College GPA</Link>
+          <Link href="/cumulative-gpa-calculator/">Cumulative GPA</Link>
         </div>
         <div className="footer-links">
           <strong>Learn</strong>

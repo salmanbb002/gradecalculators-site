@@ -4,9 +4,13 @@ import {
   BarChart3,
   Check,
   Clock3,
+  GraduationCap,
+  Layers,
   Printer,
+  School,
   ShieldCheck,
   Sparkles,
+  Target,
 } from "lucide-react";
 import Link from "next/link";
 import { BlogCard } from "@/components/blog-card";
@@ -216,6 +220,43 @@ export default function Home() {
             </div>
             <div className="formula-box" aria-label="Grade percentage formula">
               <span>Grade %</span><strong>=</strong><div><b>Total − Wrong + Bonus</b><i /><b>Total</b></div><strong>× 100</strong>
+            </div>
+          </div>
+        </section>
+
+        <section className="explore-section">
+          <div className="shell">
+            <div className="section-heading centered-heading">
+              <span className="section-kicker">MORE FREE CALCULATORS</span>
+              <h2>GPA and final grade, covered too.</h2>
+              <p>Beyond a single test score, plan a whole course or transcript with these calculators.</p>
+            </div>
+            <div className="route-card-grid">
+              <Link className="route-card route-card-primary" href="/gpa-calculator/">
+                <span><GraduationCap size={22} /></span>
+                <div><small>GPA</small><h3>GPA Calculator</h3><p>Weighted or unweighted GPA from your course list.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/final-grade-calculator/">
+                <span><Target size={22} /></span>
+                <div><small>FINAL EXAM</small><h3>Final Grade Calculator</h3><p>Find the score you need on your final exam.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/high-school-gpa-calculator/">
+                <span><School size={22} /></span>
+                <div><small>HIGH SCHOOL</small><h3>High School GPA</h3><p>Weighted for AP, Honors, and IB courses.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/college-gpa-calculator/">
+                <span><GraduationCap size={22} /></span>
+                <div><small>COLLEGE</small><h3>College GPA</h3><p>Credit-hour based semester GPA.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/cumulative-gpa-calculator/">
+                <span><Layers size={22} /></span>
+                <div><small>ALL TERMS</small><h3>Cumulative GPA</h3><p>Combine every semester into one GPA.</p></div>
+                <ArrowRight size={18} />
+              </Link>
             </div>
           </div>
         </section>

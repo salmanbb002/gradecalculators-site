@@ -283,6 +283,503 @@ export const blogPosts: BlogPost[] = [
       { label: "Grade calculator FAQ", description: "Find quick answers about rounding.", href: "/faq/" },
     ],
   },
+  {
+    slug: "how-to-calculate-gpa-weighted-and-unweighted",
+    title: "How to Calculate GPA (Weighted and Unweighted)",
+    seoTitle: "How to Calculate GPA: Weighted & Unweighted | Grade Calculator",
+    description: "Learn the GPA formula step by step, see the difference between weighted and unweighted GPA, and work through a full example with credit hours.",
+    category: "GPA basics",
+    readingTime: "8 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "To calculate GPA, convert each course's letter grade into grade points (A = 4.0, B = 3.0, and so on), multiply each course's points by its credit hours to get quality points, add the quality points together, then divide by total credit hours. Weighted GPA adds bonus points for Honors and AP/IB courses before this final division.",
+    sections: [
+      {
+        heading: "The GPA formula",
+        paragraphs: [
+          "GPA is a credit-weighted average, not a simple average of letter grades. Every course contributes quality points equal to its GPA points multiplied by its credit hours, and the GPA is the sum of quality points divided by the sum of credit hours.",
+        ],
+        list: [
+          "Convert each course's letter grade to GPA points using the 4.0 scale.",
+          "Multiply each course's GPA points by its credit hours to get quality points.",
+          "Add the quality points from every course.",
+          "Divide total quality points by total credit hours.",
+        ],
+      },
+      {
+        heading: "Worked example",
+        paragraphs: ["A student takes four courses in one term. The GPA is the total quality points divided by total credit hours, not a plain average of the four grades."],
+        table: {
+          headers: ["Course", "Grade", "Points", "Credits", "Quality points"],
+          rows: [
+            ["English", "A−", "3.7", "3", "11.10"],
+            ["Chemistry", "B+", "3.3", "4", "13.20"],
+            ["History", "A", "4.0", "3", "12.00"],
+            ["Algebra II", "B", "3.0", "3", "9.00"],
+          ],
+        },
+      },
+      {
+        heading: "Weighted vs. unweighted GPA",
+        paragraphs: [
+          "An unweighted GPA caps every course's contribution at 4.0. A weighted GPA adds bonus points for more difficult courses — a common convention is +0.5 for Honors and +1.0 for AP or IB — before the credit-hour division, which is why a weighted GPA can exceed 4.0.",
+          "In the example above, if Chemistry were an AP course, its weighted points would be 3.3 + 1.0 = 4.3, raising both that course's quality points and the overall GPA.",
+        ],
+      },
+      {
+        heading: "Common GPA calculation mistakes",
+        paragraphs: [
+          "The most frequent error is averaging grade points directly without accounting for credit hours, which overweights low-credit courses and underweights high-credit courses. Another common mistake is applying a weighted bonus to a failing grade — most schools do not award bonus points for an F regardless of course level.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "GPA calculator", description: "Enter your own courses and credits.", href: "/gpa-calculator/" },
+      { label: "High school GPA calculator", description: "AP, Honors, and IB weighting.", href: "/high-school-gpa-calculator/" },
+      { label: "College GPA calculator", description: "Semester GPA from credit hours.", href: "/college-gpa-calculator/" },
+    ],
+  },
+  {
+    slug: "high-school-gpa-scale-4-vs-5",
+    title: "High School GPA Scale: 4.0 vs. 5.0 Explained",
+    seoTitle: "High School GPA Scale: 4.0 vs 5.0 | Grade Calculator",
+    description: "Understand the difference between the 4.0 unweighted GPA scale and the 5.0 weighted GPA scale used for AP, Honors, and IB courses in high school.",
+    category: "GPA basics",
+    readingTime: "6 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "The 4.0 scale is unweighted and caps every course at 4.0 regardless of difficulty. The 5.0 scale is weighted, adding roughly 1.0 grade point for AP or IB courses and 0.5 for Honors courses, so a student with a rigorous, high-scoring schedule can approach a 5.0 GPA.",
+    sections: [
+      {
+        heading: "Why two scales exist",
+        paragraphs: [
+          "The 4.0 scale answers a simple question: what letter grades did a student earn? The 5.0 scale answers a different question: how did a student perform relative to course difficulty? Reporting both lets colleges see raw academic performance and the rigor of the schedule side by side.",
+        ],
+      },
+      {
+        heading: "How the 5.0 scale is built",
+        table: {
+          headers: ["Letter grade", "Regular (4.0 scale)", "Honors (+0.5)", "AP / IB (+1.0)"],
+          rows: [
+            ["A", "4.0", "4.5", "5.0"],
+            ["B", "3.0", "3.5", "4.0"],
+            ["C", "2.0", "2.5", "3.0"],
+            ["D", "1.0", "1.5", "2.0"],
+            ["F", "0.0", "0.0", "0.0"],
+          ],
+        },
+      },
+      {
+        heading: "Not every school uses the same bonus",
+        paragraphs: [
+          "Some districts cap weighted GPA at 4.5 instead of 5.0, some only weight AP/IB and not Honors, and some use a different bonus value entirely. There is no single national standard, which is why a 4.2 weighted GPA at one school is not directly comparable to a 4.2 at another.",
+        ],
+      },
+      {
+        heading: "Which GPA should go on a college application?",
+        paragraphs: [
+          "Most applications ask for both, and many colleges recalculate GPA internally using their own weighting formula so every applicant is compared on the same scale. Report the figures your school's transcript provides — do not attempt to convert between different schools' weighting systems yourself.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "High school GPA calculator", description: "Calculate your weighted or unweighted GPA.", href: "/high-school-gpa-calculator/" },
+      { label: "GPA calculator", description: "General weighted and unweighted GPA.", href: "/gpa-calculator/" },
+      { label: "Grading scale", description: "Percentage to letter-grade reference.", href: "/grading-scale/" },
+    ],
+  },
+  {
+    slug: "what-grade-do-i-need-on-my-final-exam",
+    title: "What Grade Do I Need on My Final Exam?",
+    seoTitle: "What Grade Do I Need on My Final Exam? | Grade Calculator",
+    description: "Learn the formula for finding the score you need on a final exam to reach a target course grade, with a worked example and common edge cases.",
+    category: "Final exams",
+    readingTime: "6 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "Required final score = (target grade − current grade × (1 − final weight)) ÷ final weight, using the final's weight as a decimal share of the course grade. A student at 88% needing a B (83%) on a final worth 25% needs only 63% — because the current grade already carries most of the course.",
+    sections: [
+      {
+        heading: "The formula, explained",
+        paragraphs: [
+          "A course grade is a weighted average: final course grade = current grade × (1 − final weight) + final exam score × final weight. Solving that equation for the unknown final exam score gives the required-score formula.",
+          "The current grade should reflect everything graded before the final — the weighted average of all other categories, not a raw point total, unless the course truly is 100% points-based.",
+        ],
+      },
+      {
+        heading: "Worked example",
+        paragraphs: ["A student has a 78% average going into a final worth 30% of the grade and wants to reach an 80% overall."],
+        table: {
+          headers: ["Value", "Amount"],
+          rows: [
+            ["Current grade", "78%"],
+            ["Final exam weight", "30%"],
+            ["Target grade", "80%"],
+            ["Required final score", "(80 − 78 × 0.7) ÷ 0.3 = 84.7%"],
+          ],
+        },
+      },
+      {
+        heading: "When the required score is impossible",
+        paragraphs: [
+          "If the formula returns a number above 100%, the target is not reachable through the final alone. This happens when the current grade is well below the target and the final's weight is too small to close the gap even with a perfect score. Options at that point include extra credit, grade replacement policies, or accepting a lower final grade.",
+        ],
+      },
+      {
+        heading: "When the final is curved",
+        paragraphs: [
+          "Calculate the required raw score first using the uncurved formula, then apply any announced curve afterward. If an instructor adds points after grading, the effective raw score needed is lower than the calculation shows — but do not assume a curve in advance unless it is part of the stated policy.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Final grade calculator", description: "Enter your own numbers for an instant answer.", href: "/final-grade-calculator/" },
+      { label: "Grade calculator", description: "Calculate the final exam score itself.", href: "/grade-calculator/" },
+      { label: "How to calculate grades", description: "Review the weighted-average formula.", href: "/how-to-calculate-grades/" },
+    ],
+  },
+  {
+    slug: "how-to-calculate-cumulative-gpa",
+    title: "How to Calculate Cumulative GPA Across Semesters",
+    seoTitle: "How to Calculate Cumulative GPA | Grade Calculator",
+    description: "Learn how to combine GPA and credit hours from multiple semesters into one cumulative GPA, with a worked multi-term example.",
+    category: "GPA basics",
+    readingTime: "7 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "Multiply each term's GPA by its credit hours to get that term's quality points, add the quality points from every term, then divide by total credit hours across all terms. Cumulative GPA is credit-weighted, so a heavier-credit term with a strong GPA raises the cumulative average more than a lighter term with the same GPA.",
+    sections: [
+      {
+        heading: "Cumulative GPA is not an average of GPAs",
+        paragraphs: [
+          "A common mistake is averaging each term's GPA directly: (3.2 + 3.8) ÷ 2 = 3.5. That is only correct if both terms carried the same number of credit hours. When credit hours differ, the correct method weights each term's GPA by its credit hours.",
+        ],
+      },
+      {
+        heading: "Worked multi-term example",
+        table: {
+          headers: ["Term", "GPA", "Credits", "Quality points"],
+          rows: [
+            ["Fall", "3.2", "15", "48.00"],
+            ["Spring", "3.8", "12", "45.60"],
+            ["Summer", "3.5", "6", "21.00"],
+          ],
+        },
+        paragraphs: ["Cumulative GPA = (48.00 + 45.60 + 21.00) ÷ (15 + 12 + 6) = 114.60 ÷ 33 = 3.47."],
+      },
+      {
+        heading: "Why one bad term matters less over time",
+        paragraphs: [
+          "A low-GPA term early in a program, with few total credit hours on record, pulls the cumulative average down significantly. The same term after 60+ credit hours have already been earned has proportionally less effect, since it represents a smaller share of the total credit-weighted average.",
+        ],
+      },
+      {
+        heading: "Transfer credit and repeated courses",
+        paragraphs: [
+          "Transfer credit hours often count toward a degree without the grades entering the receiving school's cumulative GPA, since the grading scale differs between institutions. Repeated courses may replace the original grade, average both attempts, or count both toward credit hours attempted, depending on institutional policy — confirm the exact rule before recalculating.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Cumulative GPA calculator", description: "Combine your own terms into one GPA.", href: "/cumulative-gpa-calculator/" },
+      { label: "College GPA calculator", description: "Calculate a single semester's GPA.", href: "/college-gpa-calculator/" },
+      { label: "GPA calculator", description: "General weighted and unweighted GPA.", href: "/gpa-calculator/" },
+    ],
+  },
+  {
+    slug: "letter-grade-to-gpa-conversion-chart",
+    title: "Letter Grade to GPA Conversion Chart",
+    seoTitle: "Letter Grade to GPA Conversion Chart | Grade Calculator",
+    description: "A complete letter grade to GPA conversion table on the standard 4.0 scale, including plus/minus grades and common percentage equivalents.",
+    category: "GPA basics",
+    readingTime: "5 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "On the standard 4.0 scale, A = 4.0, A− = 3.7, B+ = 3.3, B = 3.0, B− = 2.7, C+ = 2.3, C = 2.0, C− = 1.7, D+ = 1.3, D = 1.0, D− = 0.7, and F = 0.0. Some schools use a simplified scale without plus/minus distinctions, where every A-range grade equals 4.0.",
+    sections: [
+      {
+        heading: "Full letter grade to GPA conversion table",
+        table: {
+          headers: ["Letter", "GPA points", "Typical percentage"],
+          rows: [
+            ["A / A+", "4.0", "93–100%"],
+            ["A−", "3.7", "90–92%"],
+            ["B+", "3.3", "87–89%"],
+            ["B", "3.0", "83–86%"],
+            ["B−", "2.7", "80–82%"],
+            ["C+", "2.3", "77–79%"],
+            ["C", "2.0", "73–76%"],
+            ["C−", "1.7", "70–72%"],
+            ["D+", "1.3", "67–69%"],
+            ["D", "1.0", "63–66%"],
+            ["D−", "0.7", "60–62%"],
+            ["F", "0.0", "Below 60%"],
+          ],
+        },
+      },
+      {
+        heading: "Why this table is a reference, not a rule",
+        paragraphs: [
+          "The percentage ranges shown match a common standard grading scale, but individual schools set their own thresholds — an A− might begin at 90% at one school and 92% at another. Always convert your percentage to a letter grade using your own school's published scale before looking up the GPA value.",
+        ],
+      },
+      {
+        heading: "Plus/minus vs. simplified GPA scales",
+        paragraphs: [
+          "Some colleges use only whole-letter GPA values (A = 4.0, B = 3.0, C = 2.0) without plus/minus distinctions, so an A− and a straight A both convert to 4.0. Check whether your institution's scale includes plus/minus GPA values before combining grades from different courses.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "GPA calculator", description: "Convert your own courses to a GPA.", href: "/gpa-calculator/" },
+      { label: "Grading scale", description: "Percentage to letter-grade reference.", href: "/grading-scale/" },
+      { label: "Grade calculator", description: "Find a percentage from raw points.", href: "/grade-calculator/" },
+    ],
+  },
+  {
+    slug: "what-is-a-passing-grade",
+    title: "What Is a Passing Grade? How Thresholds Differ by School",
+    seoTitle: "What Is a Passing Grade? | Grade Calculator",
+    description: "Learn the most common passing-grade thresholds for K-12 and college courses, why they differ by school, and how pass/fail grading changes the rules.",
+    category: "Grade policies",
+    readingTime: "6 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "A 60% (a D or higher) is the most common passing threshold in US K-12 schools, while many colleges set the passing threshold at 70% (a C or higher) for courses that count toward a major or prerequisite chain. Pass/fail courses set their own separate cutoff, which is not always the same as the standard letter-grade scale.",
+    sections: [
+      {
+        heading: "Common passing thresholds",
+        table: {
+          headers: ["Context", "Typical passing threshold", "Notes"],
+          rows: [
+            ["General K-12 course", "60% (D−)", "Varies by district and state"],
+            ["College general elective", "60–70% (D or C)", "Check the specific syllabus"],
+            ["College major/prerequisite course", "70% (C) or higher", "Often required to advance"],
+            ["Pass/fail course", "Set by instructor", "No plus/minus distinction"],
+          ],
+        },
+      },
+      {
+        heading: "Why the threshold isn't universal",
+        paragraphs: [
+          "Individual schools, districts, and departments set their own passing standards. A nursing or engineering program may require a C or higher in core courses even if the school's general passing grade is a D. Always confirm the specific policy for the course and program, not just the general school-wide default.",
+        ],
+      },
+      {
+        heading: "Pass/fail and credit/no-credit grading",
+        paragraphs: [
+          "Courses graded pass/fail or credit/no-credit use a single cutoff percentage instead of a full A–F scale, and that cutoff is not always 60%. Some pass/fail courses require 70% or a C-equivalent performance to earn a passing mark, even though no letter grade appears on the transcript.",
+        ],
+      },
+      {
+        heading: "How many questions can you miss and still pass?",
+        paragraphs: [
+          "Multiply the total questions by the required passing percentage and round the required correct answers up to the next whole question. On a 25-question test with a 60% passing score, a student needs 15 correct and can miss 10.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Grade calculator", description: "Check your own passing threshold.", href: "/grade-calculator/" },
+      { label: "Grading scale", description: "Compare standard, strict, and lenient scales.", href: "/grading-scale/" },
+      { label: "How many questions can you miss?", description: "Passing thresholds by test length.", href: "/blog/how-many-questions-can-you-miss/" },
+    ],
+  },
+  {
+    slug: "how-do-grade-curves-work",
+    title: "How Do Grade Curves Work?",
+    seoTitle: "How Do Grade Curves Work? | Grade Calculator",
+    description: "Learn the most common ways instructors curve grades, including flat-point curves, percentage curves, and scale shifts, with worked examples of each.",
+    category: "Grade policies",
+    readingTime: "7 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "A grade curve adjusts scores after grading, usually to raise the class average toward a target. Common methods add a flat number of points to every score, multiply every score by a fixed percentage, or shift the letter-grade thresholds down instead of changing the raw scores at all.",
+    sections: [
+      {
+        heading: "Flat-point curve",
+        paragraphs: [
+          "The instructor adds the same number of points to every student's score. If the highest score was 92% and the instructor wants the top score at 100%, every student receives +8 points. A 75% becomes an 83%.",
+        ],
+      },
+      {
+        heading: "Percentage (multiplicative) curve",
+        paragraphs: [
+          "Every score is multiplied by a fixed factor rather than shifted by a flat amount. This method raises high scores by more raw points than low scores, since the adjustment scales with the original score.",
+        ],
+        table: {
+          headers: ["Original score", "Flat +8 curve", "×1.10 curve"],
+          rows: [
+            ["60%", "68%", "66%"],
+            ["75%", "83%", "82.5%"],
+            ["92%", "100%", "100% (capped)"],
+          ],
+        },
+      },
+      {
+        heading: "Scale-shift curve",
+        paragraphs: [
+          "Instead of changing raw scores, the instructor lowers the percentage thresholds for each letter grade — for example, moving the A cutoff from 93% to 88%. Raw scores stay the same on paper, but more students land in a higher letter-grade band.",
+        ],
+      },
+      {
+        heading: "Square-root and standard-deviation curves",
+        paragraphs: [
+          "A square-root curve takes the square root of a percentage (expressed as a decimal) and multiplies by 100, which disproportionately helps lower scores — a 64% becomes 80%. A standard-deviation curve maps scores onto a bell curve around the class average, which can lower some students' grades even as it raises others'. These methods are less common but appear in some math and science courses.",
+        ],
+      },
+      {
+        heading: "Curves are the instructor's choice, not a right",
+        paragraphs: [
+          "No grading policy guarantees a curve. If a syllabus does not mention one, assume none will be applied and calculate your grade from the stated scale. Ask the instructor directly rather than assuming a specific curve method in advance.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Grading scale", description: "See standard, strict, and lenient thresholds.", href: "/grading-scale/" },
+      { label: "Grade calculator", description: "Recalculate a score after a curve.", href: "/grade-calculator/" },
+      { label: "Grade rounding rules", description: "How rounding interacts with grade boundaries.", href: "/blog/grade-rounding-rules/" },
+    ],
+  },
+  {
+    slug: "grade-calculators-for-teachers",
+    title: "Grade Calculators for Teachers: Batch-Grading Tips",
+    seoTitle: "Grade Calculators for Teachers | Grade Calculator",
+    description: "Practical tips for teachers using a grade calculator and grade chart to grade quizzes, tests, and assignments faster and more consistently.",
+    category: "For teachers",
+    readingTime: "6 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "Teachers save the most time by generating a printable grade chart for each assessment's total point value before grading begins, so every answer sheet can be matched to a percentage and letter grade without recalculating. Setting a consistent grading scale and rounding policy in advance also prevents inconsistent decisions on borderline scores.",
+    sections: [
+      {
+        heading: "Generate a chart before you start grading",
+        paragraphs: [
+          "Rather than calculating each student's percentage individually, build a grade chart for the assessment's total point value once. Every possible raw score is matched to a percentage and letter grade, so grading becomes a lookup rather than repeated arithmetic.",
+        ],
+      },
+      {
+        heading: "Set your scale and precision before grading begins",
+        list: [
+          "Choose standard, strict, or lenient thresholds — or a custom scale matching your school's policy.",
+          "Decide whole, half, or quarter-point precision before grading, not after seeing results.",
+          "Confirm whether bonus or extra-credit points apply to this assessment.",
+          "Decide the rounding rule for borderline scores in advance, and apply it consistently.",
+        ],
+      },
+      {
+        heading: "Handling partial credit consistently",
+        paragraphs: [
+          "For rubric-based or free-response questions, decide the smallest point increment (whole, half, or quarter point) before grading the first paper, and apply it to every student. Switching precision mid-stack is a common source of inconsistent grading that students notice and can reasonably question.",
+        ],
+      },
+      {
+        heading: "Printing a reference chart",
+        paragraphs: [
+          "A printed grade chart taped inside a grading folder or kept next to an answer key lets substitutes, teaching assistants, or co-teachers grade consistently without access to the same digital tool or gradebook software.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Grade chart", description: "Generate a printable chart for any test length.", href: "/grade-chart/" },
+      { label: "Grade calculator", description: "Grade an individual test or assignment.", href: "/grade-calculator/" },
+      { label: "Grading scale", description: "Set a consistent A–F threshold.", href: "/grading-scale/" },
+    ],
+  },
+  {
+    slug: "what-to-do-if-your-grade-is-slipping",
+    title: "What to Do If Your Grade Is Slipping Mid-Semester",
+    seoTitle: "What to Do If Your Grade Is Slipping | Grade Calculator",
+    description: "A practical, calculator-based approach to diagnosing a slipping grade mid-semester and figuring out what it will actually take to recover it.",
+    category: "Grade recovery",
+    readingTime: "7 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "Start by calculating your exact current grade in each weighted category, not just an overall guess. Identify which category has the most remaining weight and the most room for improvement, then use a final grade calculator to find the realistic score needed on remaining assessments to reach your target.",
+    sections: [
+      {
+        heading: "Diagnose before you plan",
+        paragraphs: [
+          "A slipping grade often feels worse than the numbers show, or better than they actually are. Calculate the exact weighted average from the syllabus's category weights rather than estimating, so the recovery plan is based on real numbers instead of anxiety or assumption.",
+        ],
+      },
+      {
+        heading: "Find the category with the most leverage",
+        paragraphs: [
+          "Remaining assignments in a heavily weighted category (like a final exam or major project) can move the overall grade much more than the same effort in a lightly weighted category (like participation). Focus recovery effort where the weight is highest and the remaining opportunities are largest.",
+        ],
+      },
+      {
+        heading: "Use a calculator to set a realistic target",
+        paragraphs: [
+          "Rather than aiming for an abstract improvement, calculate the specific score needed on each remaining assessment to reach a target grade. If the required score on every remaining item is over 100%, the original target is not realistic and a revised goal should be set before the final assessment, not after.",
+        ],
+      },
+      {
+        heading: "Talk to the instructor early, not late",
+        paragraphs: [
+          "Instructors are generally more willing to discuss extra credit, a grade replacement policy, or flexibility on a due date when a student raises the issue with several weeks remaining rather than in the final week of the term. Bring the calculated numbers to that conversation — a specific, well-defined gap is easier to address than a vague concern.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Final grade calculator", description: "Find the score you need on what's left.", href: "/final-grade-calculator/" },
+      { label: "Grade calculator", description: "Check your current category averages.", href: "/grade-calculator/" },
+      { label: "How extra credit affects your grade", description: "See how much bonus points really help.", href: "/blog/how-extra-credit-affects-your-grade/" },
+    ],
+  },
+  {
+    slug: "ap-honors-ib-weighted-gpa-points-explained",
+    title: "AP, Honors, and IB Weighted GPA Points Explained",
+    seoTitle: "AP, Honors & IB Weighted GPA Points | Grade Calculator",
+    description: "Understand exactly how AP, Honors, and IB courses add bonus GPA points, why the bonus varies by school, and how it affects class rank.",
+    category: "GPA basics",
+    readingTime: "6 min read",
+    published: "2026-07-26",
+    updated: "2026-07-26",
+    directAnswer: "Most schools that weight GPA add 1.0 grade point for AP or IB courses and 0.5 for Honors courses, on top of the standard 4.0-point letter-grade scale. A B in an AP class (3.0 + 1.0 = 4.0) can carry the same weighted GPA points as an A in a regular class, which is the intended effect of weighting.",
+    sections: [
+      {
+        heading: "The standard bonus convention",
+        table: {
+          headers: ["Course level", "GPA bonus", "Example: B grade"],
+          rows: [
+            ["Regular", "+0", "3.0"],
+            ["Honors", "+0.5", "3.5"],
+            ["AP / IB", "+1.0", "4.0"],
+          ],
+        },
+      },
+      {
+        heading: "Why schools weight advanced courses",
+        paragraphs: [
+          "Weighting recognizes that a B in a college-level AP course typically represents more rigorous material and a harder curve than a B in a standard course. Without weighting, a student who avoids challenging courses to protect their GPA could out-rank a student who took on harder material and earned slightly lower grades.",
+        ],
+      },
+      {
+        heading: "Weighting rarely applies to failing grades",
+        paragraphs: [
+          "Almost no school adds a weighted bonus to an F — a failing grade in an AP class still contributes 0 grade points, the same as a failing grade in a regular class. The bonus rewards performance in a difficult course, not enrollment in one.",
+        ],
+      },
+      {
+        heading: "How weighting affects class rank",
+        paragraphs: [
+          "Schools that calculate class rank typically use weighted GPA specifically so students are not penalized for choosing a harder course load. If your school reports class rank, confirm whether it is based on weighted or unweighted GPA — the two can produce noticeably different rankings for students with different course selections.",
+        ],
+      },
+      {
+        heading: "This convention is not universal",
+        paragraphs: [
+          "Some schools use a different bonus (such as +0.5 for both Honors and AP), cap the weighted scale at 4.5 instead of allowing it to approach 5.0, or do not weight GPA at all. Confirm the exact policy with your school's guidance office before comparing your weighted GPA to a published benchmark from another school.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "High school GPA calculator", description: "Calculate your own weighted GPA.", href: "/high-school-gpa-calculator/" },
+      { label: "GPA calculator", description: "General weighted and unweighted GPA.", href: "/gpa-calculator/" },
+      { label: "Letter grade to GPA chart", description: "Full 4.0-scale conversion table.", href: "/blog/letter-grade-to-gpa-conversion-chart/" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
