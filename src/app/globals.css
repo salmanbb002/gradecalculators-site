@@ -3201,6 +3201,12 @@ a {
   border-color: #9188ff;
 }
 
+.category-name-input {
+  flex: 1.8;
+  text-align: left;
+  padding-inline: 12px;
+}
+
 .course-remove-button {
   display: grid;
   flex-shrink: 0;

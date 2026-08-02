@@ -3,6 +3,7 @@ import {
   BadgeCheck,
   BarChart3,
   Check,
+  ClipboardList,
   Clock3,
   GraduationCap,
   Layers,
@@ -228,13 +229,18 @@ export default function Home() {
           <div className="shell">
             <div className="section-heading centered-heading">
               <span className="section-kicker">MORE FREE CALCULATORS</span>
-              <h2>GPA and final grade, covered too.</h2>
+              <h2>GPA, gradebook, and final grade, covered too.</h2>
               <p>Beyond a single test score, plan a whole course or transcript with these calculators.</p>
             </div>
             <div className="route-card-grid">
               <Link className="route-card route-card-primary" href="/gpa-calculator/">
                 <span><GraduationCap size={22} /></span>
                 <div><small>GPA</small><h3>GPA Calculator</h3><p>Weighted or unweighted GPA from your course list.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/gradebook-calculator/">
+                <span><ClipboardList size={22} /></span>
+                <div><small>WEIGHTED COURSE GRADE</small><h3>Gradebook Calculator</h3><p>Combine weighted categories into one course grade.</p></div>
                 <ArrowRight size={18} />
               </Link>
               <Link className="route-card" href="/final-grade-calculator/">

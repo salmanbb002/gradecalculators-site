@@ -150,6 +150,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedTools: [
+      { label: "Gradebook calculator", description: "Combine every weighted category into one grade.", href: "/gradebook-calculator/" },
       { label: "Grade calculator", description: "Find each assignment percentage first.", href: "/grade-calculator/" },
       { label: "How to calculate grades", description: "Review the raw-score formula.", href: "/how-to-calculate-grades/" },
       { label: "Grading scale", description: "Convert a final percentage to a letter.", href: "/grading-scale/" },
@@ -216,6 +217,7 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedTools: [
       { label: "Grade calculator", description: "Add bonus points to a test result.", href: "/grade-calculator/" },
+      { label: "Gradebook calculator", description: "See how extra credit shifts a weighted category.", href: "/gradebook-calculator/" },
       { label: "Grade formula", description: "See earned-points examples.", href: "/how-to-calculate-grades/" },
       { label: "Grading FAQ", description: "Review bonus and rounding answers.", href: "/faq/" },
     ],
@@ -722,6 +724,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedTools: [
+      { label: "Gradebook calculator", description: "Recalculate your weighted course grade.", href: "/gradebook-calculator/" },
       { label: "Final grade calculator", description: "Find the score you need on what's left.", href: "/final-grade-calculator/" },
       { label: "Grade calculator", description: "Check your current category averages.", href: "/grade-calculator/" },
       { label: "How extra credit affects your grade", description: "See how much bonus points really help.", href: "/blog/how-extra-credit-affects-your-grade/" },
@@ -778,6 +781,68 @@ export const blogPosts: BlogPost[] = [
       { label: "High school GPA calculator", description: "Calculate your own weighted GPA.", href: "/high-school-gpa-calculator/" },
       { label: "GPA calculator", description: "General weighted and unweighted GPA.", href: "/gpa-calculator/" },
       { label: "Letter grade to GPA chart", description: "Full 4.0-scale conversion table.", href: "/blog/letter-grade-to-gpa-conversion-chart/" },
+    ],
+  },
+  {
+    slug: "how-to-calculate-grade-percentage",
+    title: "How to Calculate Your Grade Percentage (With Examples)",
+    seoTitle: "How to Calculate a Grade Percentage | Grade Calculator",
+    description: "Learn the formula for turning correct answers or points earned into a percentage grade, plus how to combine weighted categories and solve for a final exam score.",
+    category: "Grade formulas",
+    readingTime: "7 min read",
+    published: "2026-08-01",
+    updated: "2026-08-01",
+    directAnswer: "To calculate a grade percentage, divide the points earned (or correct answers) by the total points possible, then multiply by 100. If a course has weighted categories, multiply each category's average by its weight and add the results instead of averaging every score equally.",
+    sections: [
+      {
+        heading: "Two ways to get a percentage grade",
+        paragraphs: [
+          "Every percentage grade comes from the same relationship — points earned against points possible — but the inputs differ depending on how the assessment was scored.",
+        ],
+        list: [
+          "Wrong-answers method: percentage = 100 × (total questions − wrong answers) ÷ total questions. Use this when every question is worth the same amount.",
+          "Points-earned method: percentage = (points earned ÷ points possible) × 100. Use this for rubrics, essays, and assignments with uneven point values.",
+        ],
+      },
+      {
+        heading: "Quick checks: converting common scores",
+        paragraphs: [
+          "Missing 7 of 40 questions leaves 33 correct, which works out to 82.5%. A raw score of 27 out of 40 is 67.5%, and 75 out of 80 is 93.75%. Once you have the percentage, compare it against your school's grading scale to find the letter grade — the standard scale starts an A at 93% and a passing grade at 60%, but see the full US grading scale for every threshold and GPA value, since schools vary.",
+        ],
+      },
+      {
+        heading: "Combining weighted categories into one grade",
+        paragraphs: [
+          "A single percentage only tells you about one test. Most courses combine several graded categories — homework, quizzes, exams — each worth a different share of the final grade. Multiply each category's average by its weight, then add the weighted results together. The category weights should total 100% for the overall percentage to be accurate.",
+        ],
+        table: {
+          headers: ["Category", "Score", "Weight", "Weighted value"],
+          rows: [
+            ["Homework", "90%", "20%", "18.0"],
+            ["Quizzes", "85%", "30%", "25.5"],
+            ["Midterm", "80%", "30%", "24.0"],
+            ["Final exam", "70%", "20%", "14.0"],
+          ],
+        },
+      },
+      {
+        heading: "Solving backward for the score you need on the final",
+        paragraphs: [
+          "Sometimes the question runs in reverse: given a current grade and a target grade, what score does the final exam need? The weighted average formula still applies — it's just solved for the missing final-exam score instead of the overall percentage. With a current grade of 84%, a final exam worth 30% of the course, and a target of 90% overall, the final exam needs to reach about 98.2%. A lower current grade or a lighter final-exam weight pushes that required score higher.",
+        ],
+      },
+      {
+        heading: "Using a calculator instead of doing it by hand",
+        paragraphs: [
+          "For a single test or assignment, the grade calculator converts wrong answers or points into a percentage and letter grade directly. For a full course with multiple weighted categories, the gradebook calculator adds each category and its weight, then computes the overall percentage automatically — the worked example above is its default state, so you can open it and see the same 81.5% result. If you already know your current grade and want the exact score needed on what's left, the final grade calculator solves that in one step.",
+        ],
+      },
+    ],
+    relatedTools: [
+      { label: "Gradebook calculator", description: "Combine weighted categories into a course grade.", href: "/gradebook-calculator/" },
+      { label: "Grade calculator", description: "Convert wrong answers into a percentage.", href: "/grade-calculator/" },
+      { label: "Final grade calculator", description: "Find the score you need on what's left.", href: "/final-grade-calculator/" },
+      { label: "US grading scale", description: "Compare percentage thresholds and GPA.", href: "/grading-scale/" },
     ],
   },
 ];

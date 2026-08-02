@@ -17,6 +17,7 @@ const faq = [
   ["How is a test grade calculated?", "Correct answers are divided by total questions and multiplied by 100. Bonus points are added to the correct total before the percentage is calculated."],
   ["Can I use half or quarter points?", "Yes. Open Calculator options and select whole, half, or quarter-point precision."],
   ["Can I change the letter-grade scale?", "Yes. Choose standard, strict, or lenient presets, or set a custom minimum percentage for every letter grade."],
+  ["Is this the same as an ez grader?", "Yes. \"Easy grader\" and \"ez grader\" both describe the same type of tool — one that converts wrong answers or missed points into a percentage and letter grade. This calculator covers both use cases."],
 ];
 
 export default function GradeCalculatorPage() {
@@ -87,19 +88,26 @@ export default function GradeCalculatorPage() {
                 <div><Printer size={21} /><span><b>Print-ready grade chart</b><small>Keep a clean reference beside your answer sheets.</small></span></div>
               </div>
               <h2>What is an easy grader?</h2>
-              <p>An easy grader is a classroom tool that converts total questions and wrong answers into the number correct, percentage score, and letter grade. It also creates a grading chart for every possible raw score, which helps teachers grade quizzes, tests, and exams without calculating each answer sheet separately.</p>
+              <p>An easy grader is a classroom tool that converts total questions and wrong answers into the number correct, percentage score, and letter grade. It also creates a grading chart for every possible raw score, which helps teachers grade quizzes, tests, and exams without calculating each answer sheet separately. The same tool is sometimes searched for as an "ez grader" or "ezgrader" — different spelling, same calculation.</p>
               <h2>Question-based grades vs. point-based grades</h2>
               <p>For equal-value questions, enter the number of questions as the total and count the answers missed. For essays, projects, labs, and rubric-based assignments, enter total possible points and points missed instead. The percentage formula is the same, but point-based grading supports partial credit.</p>
               <div className="reference-table-wrap"><table className="reference-table"><thead><tr><th>Assessment</th><th>Enter as total</th><th>Enter as wrong</th></tr></thead><tbody><tr><td>25-question quiz</td><td>25 questions</td><td>Questions missed</td></tr><tr><td>40-point project</td><td>40 points</td><td>Points deducted</td></tr><tr><td>20-point rubric</td><td>20 points</td><td>Whole or fractional points lost</td></tr></tbody></table></div>
+              <h2>From a percentage to a letter grade and GPA</h2>
+              <p>Once you have a percentage, it still needs converting to a letter grade and GPA value using your school's scale — the default 93% for an A here is common but not universal. See the full <Link href="/grading-scale/">US grading scale</Link> for every percentage range, letter grade, and GPA value side by side, including strict and lenient presets.</p>
+              <h2>Need a specific grade instead of a single test score?</h2>
+              <p>This calculator grades one test, quiz, or assignment at a time. If you're combining several weighted categories into one course grade, use the <Link href="/gradebook-calculator/">gradebook calculator</Link>. If you already know your current grade and want the exact score needed on a remaining final exam, the <Link href="/final-grade-calculator/">final grade calculator</Link> solves for that directly.</p>
               <h2>Use the result with the correct policy</h2>
               <p>The calculator provides the arithmetic, while the syllabus or school policy determines the official result. Confirm the assigned A–F grading scale, decimal precision, rounding method, late penalties, extra credit, and whether scores above 100% are capped.</p>
             </article>
             <aside className="related-panel">
               <span>RELATED GUIDES</span>
+              <Link href="/gradebook-calculator/"><b>Gradebook calculator</b><small>Combine weighted categories into a course grade.</small><ArrowRight size={16} /></Link>
+              <Link href="/final-grade-calculator/"><b>Final grade calculator</b><small>Find the score you need on what's left.</small><ArrowRight size={16} /></Link>
               <Link href="/grade-chart/"><b>Grade chart guide</b><small>See how every score is organized.</small><ArrowRight size={16} /></Link>
               <Link href="/how-to-calculate-grades/"><b>How to calculate grades</b><small>Learn the formula with examples.</small><ArrowRight size={16} /></Link>
               <Link href="/grading-scale/"><b>US grading scale</b><small>Compare percentage thresholds.</small><ArrowRight size={16} /></Link>
               <Link href="/blog/grade-rounding-rules/"><b>Grade rounding rules</b><small>Understand scores near a boundary.</small><ArrowRight size={16} /></Link>
+              <Link href="/blog/how-to-calculate-grade-percentage/"><b>How to calculate grade percentage</b><small>The formula, step by step.</small><ArrowRight size={16} /></Link>
             </aside>
           </div>
         </section>

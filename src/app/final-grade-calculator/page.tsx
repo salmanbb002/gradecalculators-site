@@ -85,6 +85,7 @@ export default function FinalGradeCalculatorPage() {
             </article>
             <aside className="related-panel">
               <span>RELATED GUIDES</span>
+              <Link href="/gradebook-calculator/"><b>Gradebook calculator</b><small>See every weighted category, not just the final.</small><ArrowRight size={16} /></Link>
               <Link href="/grade-calculator/"><b>Grade calculator</b><small>Calculate a single test or assignment score.</small><ArrowRight size={16} /></Link>
               <Link href="/grading-scale/"><b>US grading scale</b><small>Compare percentage thresholds.</small><ArrowRight size={16} /></Link>
               <Link href="/gpa-calculator/"><b>GPA calculator</b><small>See how this course affects your GPA.</small><ArrowRight size={16} /></Link>
