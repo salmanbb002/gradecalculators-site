@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `/blog/${post.slug}/`,
       publishedTime: post.published,
       modifiedTime: post.updated,
+      images: [{ url: post.coverImage, width: 800, height: 450, alt: post.title }],
     },
   };
 }
@@ -89,6 +90,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
         <section className="content-section blog-article-section">
           <div className="shell content-grid">
             <article className="article-content blog-article">
+              <div className="blog-article-cover"><img src={post.coverImage} alt="" width={800} height={450} /></div>
               <div className="direct-answer"><span>QUICK ANSWER</span><p>{post.directAnswer}</p></div>
               {post.sections.map((section) => (
                 <section className="blog-content-section" key={section.heading}>

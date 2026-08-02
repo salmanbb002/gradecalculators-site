@@ -1,0 +1,21 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GPA basics illustration">
+  <defs>
+    <linearGradient id="bg-how-to-calculate-gpa-weighted-and-unweighted" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efedff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="dots-how-to-calculate-gpa-weighted-and-unweighted" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#6558f5" opacity="0.16" />
+    </pattern>
+    <clipPath id="clip-how-to-calculate-gpa-weighted-and-unweighted"><rect width="800" height="450" /></clipPath>
+  </defs>
+  <g clip-path="url(#clip-how-to-calculate-gpa-weighted-and-unweighted)">
+    <rect width="800" height="450" fill="url(#bg-how-to-calculate-gpa-weighted-and-unweighted)" />
+    <rect width="800" height="450" fill="url(#dots-how-to-calculate-gpa-weighted-and-unweighted)" />
+    <circle cx="140.7" cy="178.1" r="174.0" fill="#a89bff" opacity="0.22" />
+    <circle cx="658.9" cy="353.6" r="131.5" fill="#6558f5" opacity="0.16" />
+    <rect x="496.8" y="158.8" width="140" height="140" rx="30" fill="#ffffff" opacity="0.6" />
+    <rect x="502.8" y="164.8" width="128" height="128" rx="26" fill="#ffffff" stroke="#a89bff" stroke-width="1.5" />
+    <g transform="translate(534.8118901344787, 196.81656862256932) scale(2.6666666666666665)" fill="none" stroke="#5143df" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></g>
+  </g>
+</svg>

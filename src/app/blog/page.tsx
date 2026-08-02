@@ -41,7 +41,7 @@ export default function BlogPage() {
             <span className="section-kicker">GRADING KNOWLEDGE BASE</span>
             <h1>Grade Calculator Blog</h1>
             <p>Clear, practical guides for understanding test grades, raw scores, weighted categories, extra credit, rounding rules, and percentage-to-letter-grade conversions.</p>
-            <div className="updated-note">4 in-depth guides · Teacher and student friendly · Updated July 16, 2026</div>
+            <div className="updated-note">{blogPosts.length} in-depth guides · Teacher and student friendly · Updated August 2, 2026</div>
           </div>
         </section>
 

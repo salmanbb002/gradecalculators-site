@@ -12,6 +12,7 @@ export type BlogSection = {
 
 export type BlogPost = {
   slug: string;
+  coverImage: string;
   title: string;
   seoTitle: string;
   description: string;
@@ -27,6 +28,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-many-questions-can-you-miss",
+    coverImage: "/images/blog/how-many-questions-can-you-miss.svg",
     title: "How Many Questions Can You Miss and Still Pass?",
     seoTitle: "How Many Questions Can You Miss? | Grade Calculator",
     description: "Learn how to calculate the maximum questions you can miss and still earn a passing grade, with examples for 10-, 20-, 25-, 50-, and 100-question tests.",
@@ -92,6 +94,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "weighted-vs-unweighted-grades",
+    coverImage: "/images/blog/weighted-vs-unweighted-grades.svg",
     title: "Weighted vs. Unweighted Grades: What Is the Difference?",
     seoTitle: "Weighted vs. Unweighted Grades | Grade Calculator",
     description: "Understand weighted and unweighted grades, calculate weighted category averages, and see how course weights differ from weighted GPA.",
@@ -158,6 +161,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-extra-credit-affects-your-grade",
+    coverImage: "/images/blog/how-extra-credit-affects-your-grade.svg",
     title: "How Extra Credit Affects Your Grade",
     seoTitle: "How Extra Credit Affects Grades | Grade Calculator",
     description: "Learn how bonus points and extra-credit assignments change a test or course grade, with formulas, examples, and common gradebook methods.",
@@ -224,6 +228,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "grade-rounding-rules",
+    coverImage: "/images/blog/grade-rounding-rules.svg",
     title: "Grade Rounding Rules: When Does 89.5 Become 90?",
     seoTitle: "Grade Rounding Rules | Grade Calculator",
     description: "Understand common grade rounding methods, decimal precision, boundary scores, and why an 89.5% does not automatically become a 90% in every course.",
@@ -287,6 +292,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-calculate-gpa-weighted-and-unweighted",
+    coverImage: "/images/blog/how-to-calculate-gpa-weighted-and-unweighted.svg",
     title: "How to Calculate GPA (Weighted and Unweighted)",
     seoTitle: "How to Calculate GPA: Weighted & Unweighted | Grade Calculator",
     description: "Learn the GPA formula step by step, see the difference between weighted and unweighted GPA, and work through a full example with credit hours.",
@@ -343,6 +349,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "high-school-gpa-scale-4-vs-5",
+    coverImage: "/images/blog/high-school-gpa-scale-4-vs-5.svg",
     title: "High School GPA Scale: 4.0 vs. 5.0 Explained",
     seoTitle: "High School GPA Scale: 4.0 vs 5.0 | Grade Calculator",
     description: "Understand the difference between the 4.0 unweighted GPA scale and the 5.0 weighted GPA scale used for AP, Honors, and IB courses in high school.",
@@ -392,6 +399,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-grade-do-i-need-on-my-final-exam",
+    coverImage: "/images/blog/what-grade-do-i-need-on-my-final-exam.svg",
     title: "What Grade Do I Need on My Final Exam?",
     seoTitle: "What Grade Do I Need on My Final Exam? | Grade Calculator",
     description: "Learn the formula for finding the score you need on a final exam to reach a target course grade, with a worked example and common edge cases.",
@@ -442,6 +450,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-calculate-cumulative-gpa",
+    coverImage: "/images/blog/how-to-calculate-cumulative-gpa.svg",
     title: "How to Calculate Cumulative GPA Across Semesters",
     seoTitle: "How to Calculate Cumulative GPA | Grade Calculator",
     description: "Learn how to combine GPA and credit hours from multiple semesters into one cumulative GPA, with a worked multi-term example.",
@@ -490,6 +499,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "letter-grade-to-gpa-conversion-chart",
+    coverImage: "/images/blog/letter-grade-to-gpa-conversion-chart.svg",
     title: "Letter Grade to GPA Conversion Chart",
     seoTitle: "Letter Grade to GPA Conversion Chart | Grade Calculator",
     description: "A complete letter grade to GPA conversion table on the standard 4.0 scale, including plus/minus grades and common percentage equivalents.",
@@ -540,6 +550,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-a-passing-grade",
+    coverImage: "/images/blog/what-is-a-passing-grade.svg",
     title: "What Is a Passing Grade? How Thresholds Differ by School",
     seoTitle: "What Is a Passing Grade? | Grade Calculator",
     description: "Learn the most common passing-grade thresholds for K-12 and college courses, why they differ by school, and how pass/fail grading changes the rules.",
@@ -588,6 +599,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-do-grade-curves-work",
+    coverImage: "/images/blog/how-do-grade-curves-work.svg",
     title: "How Do Grade Curves Work?",
     seoTitle: "How Do Grade Curves Work? | Grade Calculator",
     description: "Learn the most common ways instructors curve grades, including flat-point curves, percentage curves, and scale shifts, with worked examples of each.",
@@ -644,6 +656,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "grade-calculators-for-teachers",
+    coverImage: "/images/blog/grade-calculators-for-teachers.svg",
     title: "Grade Calculators for Teachers: Batch-Grading Tips",
     seoTitle: "Grade Calculators for Teachers | Grade Calculator",
     description: "Practical tips for teachers using a grade calculator and grade chart to grade quizzes, tests, and assignments faster and more consistently.",
@@ -689,6 +702,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-to-do-if-your-grade-is-slipping",
+    coverImage: "/images/blog/what-to-do-if-your-grade-is-slipping.svg",
     title: "What to Do If Your Grade Is Slipping Mid-Semester",
     seoTitle: "What to Do If Your Grade Is Slipping | Grade Calculator",
     description: "A practical, calculator-based approach to diagnosing a slipping grade mid-semester and figuring out what it will actually take to recover it.",
@@ -732,6 +746,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ap-honors-ib-weighted-gpa-points-explained",
+    coverImage: "/images/blog/ap-honors-ib-weighted-gpa-points-explained.svg",
     title: "AP, Honors, and IB Weighted GPA Points Explained",
     seoTitle: "AP, Honors & IB Weighted GPA Points | Grade Calculator",
     description: "Understand exactly how AP, Honors, and IB courses add bonus GPA points, why the bonus varies by school, and how it affects class rank.",
@@ -785,6 +800,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-calculate-grade-percentage",
+    coverImage: "/images/blog/how-to-calculate-grade-percentage.svg",
     title: "How to Calculate Your Grade Percentage (With Examples)",
     seoTitle: "How to Calculate a Grade Percentage | Grade Calculator",
     description: "Learn the formula for turning correct answers or points earned into a percentage grade, plus how to combine weighted categories and solve for a final exam score.",
