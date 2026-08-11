@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   Sparkles,
   Target,
+  Zap,
 } from "lucide-react";
 import Link from "next/link";
 import { BlogCard } from "@/components/blog-card";
@@ -236,6 +237,11 @@ export default function Home() {
               <Link className="route-card route-card-primary" href="/gpa-calculator/">
                 <span><GraduationCap size={22} /></span>
                 <div><small>GPA</small><h3>GPA Calculator</h3><p>Weighted or unweighted GPA from your course list.</p></div>
+                <ArrowRight size={18} />
+              </Link>
+              <Link className="route-card" href="/easy-grader/">
+                <span><Zap size={22} /></span>
+                <div><small>QUICK GRADING</small><h3>Easy Grader</h3><p>The classic ez grader, free and online.</p></div>
                 <ArrowRight size={18} />
               </Link>
               <Link className="route-card" href="/gradebook-calculator/">

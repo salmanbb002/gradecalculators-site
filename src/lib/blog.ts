@@ -855,8 +855,8 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedTools: [
+      { label: "Grade calculator", description: "Open the tool used throughout this guide to calculate your own grade percentage.", href: "/grade-calculator/" },
       { label: "Gradebook calculator", description: "Combine weighted categories into a course grade.", href: "/gradebook-calculator/" },
-      { label: "Grade calculator", description: "Convert wrong answers into a percentage.", href: "/grade-calculator/" },
       { label: "Final grade calculator", description: "Find the score you need on what's left.", href: "/final-grade-calculator/" },
       { label: "US grading scale", description: "Compare percentage thresholds and GPA.", href: "/grading-scale/" },
     ],

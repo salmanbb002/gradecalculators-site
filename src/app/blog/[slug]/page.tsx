@@ -54,7 +54,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
         dateModified: post.updated,
         url,
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
-        author: { "@type": "Organization", name: "Grade Calculator Editorial Team", url: "https://gradecalculators.site/" },
+        author: { "@type": "Person", name: "Muhammd Salman", url: "https://gradecalculators.site/about/" },
         publisher: {
           "@type": "Organization",
           name: "Grade Calculator",
@@ -102,9 +102,9 @@ export default async function BlogArticlePage({ params }: PageProps) {
               ))}
 
               <div className="editorial-note">
-                <span>ABOUT THIS GUIDE</span>
-                <h2>Grade Calculator Editorial Team</h2>
-                <p>We create plain-language grading tools and educational guides, check every worked example against the underlying formula, and note where school or instructor policies can change the result.</p>
+                <span>WRITTEN BY</span>
+                <h2>Muhammd Salman</h2>
+                <p>I build and maintain Grade Calculator independently. Every worked example on this site is checked against the underlying formula, with notes on where school or instructor policy can change the result. <Link href="/about/">More about this site →</Link></p>
               </div>
             </article>
 

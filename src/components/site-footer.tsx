@@ -12,6 +12,7 @@ export function SiteFooter() {
         <div className="footer-links">
           <strong>Calculators</strong>
           <Link href="/grade-calculator/">Grade calculator</Link>
+          <Link href="/easy-grader/">Easy grader / EZ grader</Link>
           <Link href="/grade-chart/">Printable grade chart</Link>
           <Link href="/grading-scale/">US grading scale</Link>
           <Link href="/final-grade-calculator/">Final grade calculator</Link>
@@ -29,6 +30,12 @@ export function SiteFooter() {
           <Link href="/blog/">Grading blog</Link>
           <Link href="/faq/">Grade calculator FAQ</Link>
           <Link href="/blog/how-many-questions-can-you-miss/">How many questions can you miss?</Link>
+        </div>
+        <div className="footer-links">
+          <strong>Site</strong>
+          <Link href="/about/">About</Link>
+          <Link href="/privacy-policy/">Privacy policy</Link>
+          <Link href="/contact/">Contact</Link>
         </div>
       </div>
       <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Grade Calculator</span><span>Made for better teaching days.</span></div>

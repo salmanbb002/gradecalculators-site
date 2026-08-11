@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
   title: "Gradebook Calculator: Weighted Course Grade | Grade Calculator",
-  description: "Calculate a weighted course grade from homework, quiz, midterm, and final categories. Add every category and weight to see your overall grade instantly.",
+  description: "This free online gradebook calculator finds a weighted course grade from homework, quiz, midterm, and final categories. Add every category and weight to see your overall grade instantly.",
   alternates: { canonical: "/gradebook-calculator/" },
   openGraph: { title: "Gradebook Calculator: Weighted Course Grade", url: "/gradebook-calculator/" },
 };
@@ -61,7 +61,7 @@ export default function GradebookCalculatorPage() {
             <Breadcrumbs current="Gradebook calculator" />
             <span className="section-kicker">WEIGHTED COURSE GRADE</span>
             <h1>Gradebook Calculator</h1>
-            <p>Combine homework, quizzes, exams, and any other graded category into one overall course grade. Enter each category's weight and your score, and the total updates instantly.</p>
+            <p>This online gradebook calculator combines homework, quizzes, exams, and any other graded category into one overall course grade. Enter each category's weight and your score, and the total updates instantly.</p>
             <div className="updated-note">Free to use · No sign-up · Updated August 1, 2026</div>
           </div>
         </section>

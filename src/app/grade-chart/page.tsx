@@ -36,7 +36,7 @@ export default function GradeChartPage() {
       <SiteHeader />
       <main className="inner-page">
         <section className="page-hero"><div className="shell"><Breadcrumbs current="Grade chart" /><span className="section-kicker">GRADING REFERENCE</span><h1>Grade Chart</h1><p>A grade chart lists every possible score for a test. Teachers can match the number of wrong answers with the correct percentage and letter grade without repeating the calculation.</p><div className="updated-note">Example chart · 10 total questions · Updated July 16, 2026</div></div></section>
-        <section className="page-tool-section"><div className="shell"><div className="page-tool-heading"><span className="section-kicker">INTERACTIVE TOOL</span><h2>Generate a grade chart</h2><p>Choose a test length and grading scale to create a printable table for every possible score.</p></div><GradeChartTool /></div></section>
+        <section className="page-tool-section"><div className="shell"><div className="page-tool-heading"><span className="section-kicker">INTERACTIVE TOOL</span><h2>Generate a grade chart</h2><p>Choose a test length and grade scale calculator preset (standard, strict, or lenient) to create a printable table for every possible score.</p></div><GradeChartTool /></div></section>
         <section className="content-section"><div className="shell content-grid">
           <article className="article-content">
             <div className="direct-answer"><span>QUICK DEFINITION</span><p>A grade chart, also called a grading chart or easy-grader table, matches raw scores with percentages and letter grades. Each row shows how the result changes when one more answer is correct or wrong.</p></div>

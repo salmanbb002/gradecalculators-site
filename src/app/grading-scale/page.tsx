@@ -9,7 +9,7 @@ import { SCALE_PRESETS } from "@/lib/grade";
 
 export const metadata: Metadata = {
   title: "US Grading Scale: Percentage to Letter Grade | Grade Calculator",
-  description: "Review the standard US grading scale from A to F. Compare percentage ranges, letter grades, and common GPA values, then customize the scale in the calculator.",
+  description: "Use this grading scale calculator to review the standard US grading scale from A to F, compare percentage ranges and GPA values, then customize your own grade scale.",
   alternates: { canonical: "/grading-scale/" },
   openGraph: { title: "US Grading Scale: Percentage to Letter Grade", url: "/grading-scale/" },
 };
@@ -34,7 +34,7 @@ export default function GradingScalePage() {
       <SiteHeader />
       <main className="inner-page">
         <section className="page-hero"><div className="shell"><Breadcrumbs current="Grading scale" /><span className="section-kicker">LETTER-GRADE REFERENCE</span><h1>US Grading Scale</h1><p>The standard US grading scale converts percentage scores into letter grades from A to F. Individual schools and instructors may use different thresholds, so always confirm the assigned scale.</p><div className="updated-note">Standard A–F scale · Common GPA values · Updated August 1, 2026</div></div></section>
-        <section className="page-tool-section"><div className="shell"><div className="page-tool-heading"><span className="section-kicker">INTERACTIVE TOOL</span><h2>Convert percentage to letter grade</h2><p>Enter any percentage and compare standard, strict, and lenient A–F grading scales.</p></div><GradingScaleTool /></div></section>
+        <section className="page-tool-section"><div className="shell"><div className="page-tool-heading"><span className="section-kicker">INTERACTIVE TOOL</span><h2>Grading scale calculator</h2><p>This grading scale calculator (also searched as a grade scale calculator) converts any percentage into a letter grade — enter a score below and compare standard, strict, and lenient A–F scales side by side.</p></div><GradingScaleTool /></div></section>
         <section className="content-section"><div className="shell content-grid">
           <article className="article-content">
             <div className="direct-answer"><span>QUICK DEFINITION</span><p>A grading scale defines the minimum percentage required for each letter grade. It converts a numerical score into A, B, C, D, or F, often with plus and minus bands.</p></div>

@@ -18,6 +18,8 @@ const faq = [
   ["Can I use half or quarter points?", "Yes. Open Calculator options and select whole, half, or quarter-point precision."],
   ["Can I change the letter-grade scale?", "Yes. Choose standard, strict, or lenient presets, or set a custom minimum percentage for every letter grade."],
   ["Is this the same as an ez grader?", "Yes. \"Easy grader\" and \"ez grader\" both describe the same type of tool — one that converts wrong answers or missed points into a percentage and letter grade. This calculator covers both use cases."],
+  ["Can I use this as a grade percentage calculator?", "Yes. Enter total points possible instead of total questions, and points missed instead of wrong answers — the live result is your grade percentage, calculated the same way as a question-based test."],
+  ["Does the calculator support points instead of just questions?", "Yes. It works as a grade calculator with points or percentages interchangeably — questions and points use the identical formula, so switch between them based on how the assignment is actually scored."],
 ];
 
 export default function GradeCalculatorPage() {
@@ -88,10 +90,14 @@ export default function GradeCalculatorPage() {
                 <div><Printer size={21} /><span><b>Print-ready grade chart</b><small>Keep a clean reference beside your answer sheets.</small></span></div>
               </div>
               <h2>What is an easy grader?</h2>
-              <p>An easy grader is a classroom tool that converts total questions and wrong answers into the number correct, percentage score, and letter grade. It also creates a grading chart for every possible raw score, which helps teachers grade quizzes, tests, and exams without calculating each answer sheet separately. The same tool is sometimes searched for as an "ez grader" or "ezgrader" — different spelling, same calculation.</p>
+              <p>An easy grader is a classroom tool that converts total questions and wrong answers into the number correct, percentage score, and letter grade. It also creates a grading chart for every possible raw score, which helps teachers grade quizzes, tests, and exams without calculating each answer sheet separately. The same tool is sometimes searched for as an "ez grader" or "ezgrader" — different spelling, same calculation. See the dedicated <Link href="/easy-grader/">easy grader / ez grader guide</Link> for more on both terms.</p>
               <h2>Question-based grades vs. point-based grades</h2>
               <p>For equal-value questions, enter the number of questions as the total and count the answers missed. For essays, projects, labs, and rubric-based assignments, enter total possible points and points missed instead. The percentage formula is the same, but point-based grading supports partial credit.</p>
               <div className="reference-table-wrap"><table className="reference-table"><thead><tr><th>Assessment</th><th>Enter as total</th><th>Enter as wrong</th></tr></thead><tbody><tr><td>25-question quiz</td><td>25 questions</td><td>Questions missed</td></tr><tr><td>40-point project</td><td>40 points</td><td>Points deducted</td></tr><tr><td>20-point rubric</td><td>20 points</td><td>Whole or fractional points lost</td></tr></tbody></table></div>
+              <h2>Using this as a grade percentage calculator</h2>
+              <p>Every result above is a grade percentage calculator at its core — points or questions in, a percentage out. Enter total points instead of total questions to use it as a grade calculator with percentages directly: type the points possible into "Total questions," the points lost into "Wrong answers," and the live result is your percentage grade, no manual division required.</p>
+              <div className="reference-table-wrap"><table className="reference-table"><thead><tr><th>Points earned</th><th>Points possible</th><th>Grade percentage</th></tr></thead><tbody><tr><td>17</td><td>20</td><td>85%</td></tr><tr><td>42</td><td>50</td><td>84%</td></tr><tr><td>88</td><td>100</td><td>88%</td></tr></tbody></table></div>
+              <p>Bonus or extra-credit points work the same way as a grade calculator with points: add them in Calculator options and they're included before the percentage is calculated, which can push a result above 100%.</p>
               <h2>From a percentage to a letter grade and GPA</h2>
               <p>Once you have a percentage, it still needs converting to a letter grade and GPA value using your school's scale — the default 93% for an A here is common but not universal. See the full <Link href="/grading-scale/">US grading scale</Link> for every percentage range, letter grade, and GPA value side by side, including strict and lenient presets.</p>
               <h2>Need a specific grade instead of a single test score?</h2>
@@ -101,6 +107,7 @@ export default function GradeCalculatorPage() {
             </article>
             <aside className="related-panel">
               <span>RELATED GUIDES</span>
+              <Link href="/easy-grader/"><b>Easy grader / EZ grader</b><small>Same tool, dedicated to both spellings.</small><ArrowRight size={16} /></Link>
               <Link href="/gradebook-calculator/"><b>Gradebook calculator</b><small>Combine weighted categories into a course grade.</small><ArrowRight size={16} /></Link>
               <Link href="/final-grade-calculator/"><b>Final grade calculator</b><small>Find the score you need on what's left.</small><ArrowRight size={16} /></Link>
               <Link href="/grade-chart/"><b>Grade chart guide</b><small>See how every score is organized.</small><ArrowRight size={16} /></Link>
