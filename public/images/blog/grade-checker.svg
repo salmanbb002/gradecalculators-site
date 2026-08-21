@@ -1,0 +1,21 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grading tools illustration">
+  <defs>
+    <linearGradient id="bg-grade-checker" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efedff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="dots-grade-checker" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#6558f5" opacity="0.16" />
+    </pattern>
+    <clipPath id="clip-grade-checker"><rect width="800" height="450" /></clipPath>
+  </defs>
+  <g clip-path="url(#clip-grade-checker)">
+    <rect width="800" height="450" fill="url(#bg-grade-checker)" />
+    <rect width="800" height="450" fill="url(#dots-grade-checker)" />
+    <circle cx="94.5" cy="112.1" r="170.7" fill="#a89bff" opacity="0.22" />
+    <circle cx="696.5" cy="417.1" r="125.2" fill="#6558f5" opacity="0.16" />
+    <rect x="507.7" y="163.2" width="140" height="140" rx="30" fill="#ffffff" opacity="0.6" />
+    <rect x="513.7" y="169.2" width="128" height="128" rx="26" fill="#ffffff" stroke="#a89bff" stroke-width="1.5" />
+    <g transform="translate(545.6880917751187, 201.2445847641793) scale(2.6666666666666665)" fill="none" stroke="#5143df" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="19" x2="5" y1="5" y2="19" /><circle cx="6.5" cy="6.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" /></g>
+  </g>
+</svg>

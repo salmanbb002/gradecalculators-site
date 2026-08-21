@@ -66,6 +66,7 @@ const CATEGORY_STYLE = {
   "Final exams": { palette: "amber", icon: "Clock3" },
   "For teachers": { palette: "green", icon: "Presentation" },
   "Grade recovery": { palette: "red", icon: "TrendingUp" },
+  "Grading tools": { palette: "purple", icon: "Percent" },
 };
 
 const POSTS = [
@@ -84,6 +85,10 @@ const POSTS = [
   { slug: "what-to-do-if-your-grade-is-slipping", category: "Grade recovery" },
   { slug: "ap-honors-ib-weighted-gpa-points-explained", category: "GPA basics" },
   { slug: "how-to-calculate-grade-percentage", category: "Grade formulas" },
+  { slug: "easy-grader-explainer", category: "Grading tools" },
+  { slug: "quick-grader-method", category: "Grading tools" },
+  { slug: "grading-scale-explained", category: "Grade policies" },
+  { slug: "grade-checker", category: "Grading tools" },
 ];
 
 // Deterministic hash so each slug always renders the same cover (stable across re-runs / diffs).

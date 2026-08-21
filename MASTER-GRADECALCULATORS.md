@@ -110,4 +110,72 @@ All six steps from §5's priority order were completed in one session. `npm run 
 
 **Still open, not part of this session's scope:** off-page/backlink work (§5.8), actually submitting the sitemap and requesting indexing in Search Console (user-only action, flagged in §5.1), and live-site CWV measurement.
 
-*Keyword mapping finalized 2026-08-11. Build session completed 2026-08-11 — see §6 above.*
+## 7. Blog content strategy (added 2026-08-21)
+
+Built from the same `gradecalculator-keyword-clusters.xlsx` used for §4, cross-checked against the 15 posts already live (§3) so nothing here duplicates existing coverage or cannibalizes the pillar pages built in §6. **Rule for this site: blog posts target informational/long-tail intent and feed traffic + internal links into the tool pillars; they don't re-target the commercial head terms the pillars already own.**
+
+### 7.1 Cluster coverage audit
+
+| Cluster | Pillar page (owns commercial intent) | Existing blog coverage | Gap? |
+|---|---|---|---|
+| Grade Calculator (Core) | `/grade-calculator/` | `how-to-calculate-grade-percentage`, `grade-rounding-rules`, `how-many-questions-can-you-miss`, `how-extra-credit-affects-your-grade`, `how-do-grade-curves-work` | Well covered. No new post needed. |
+| Easy Grader + EZ Grader | `/easy-grader/` | None | **Gap — highest priority**, mirrors §1 finding 4. |
+| Grade Scale & Chart | `/grading-scale/`, `/grade-chart/` | None (GPA-scale posts exist but that's a different cluster — 4.0/5.0 scale, not the A–F percentage grading scale) | **Gap.** |
+| General Grader / Checker | `/easy-grader/` (absorbed per §4) | `grade-calculators-for-teachers` partially covers "grader for teachers" | Partial gap on "quick grader," "test grader," "grade checker." |
+| Gradebook Calculator | `/gradebook-calculator/` | None | **Gap.** |
+| Grade Percentage | `/grade-calculator/` | `how-to-calculate-grade-percentage` (direct match) | Covered — do not add a second post, would cannibalize. |
+| GPA cluster (not in this sheet, but on-site) | `/gpa-calculator/` + 3 spokes | `weighted-vs-unweighted-grades`, `how-to-calculate-gpa-weighted-and-unweighted`, `high-school-gpa-scale-4-vs-5`, `how-to-calculate-cumulative-gpa`, `letter-grade-to-gpa-conversion-chart`, `ap-honors-ib-weighted-gpa-points-explained` | Already the most heavily blogged cluster on the site — no new post needed here either. |
+
+### 7.2 New posts to write, in priority order
+
+1. **"What Is an Easy Grader (EZ Grader)? How the Grading Chart Works"** — supports `/easy-grader/`. Covers `easy grader`, `ez grader`, `easygrader`, `ezgrader`, `e z grader online` naturally as an explainer/history piece (the paper EZ Grader chart predates the online tool — good angle for genuine E-E-A-T depth, ties to Muhammad Salman's teaching-background bio from §6.2). ~1,400 words. Primary internal link: `/easy-grader/` above the fold.
+2. **"How to Grade Tests Fast: The Quick Grader Method for Teachers"** — supports `/easy-grader/`. Covers `quick grader`, `quick grade`, `test grader`, `grader online`, `online grader`. How-to format, practical time-saving angle for teachers grading stacks of papers. ~1,200 words.
+3. **"Grading Scale Explained: A–F, Percentage, and Weighted Scales"** — supports `/grading-scale/` and `/grade-chart/`. Covers `grading scale`, `grade scale`, `grading scale calculator`, `grade scale calculator`, `grade chart`. Reference/explainer with a scale table — good link-bait for teacher-resource roundups (feeds §5.8 backlink goal). ~1,300 words.
+4. **"How to Use an Online Gradebook Calculator for Your Class"** — supports `/gradebook-calculator/`. Covers `gradebook calculator`, `online gradebook calculator`, `online grading calculator`. How-to/workflow piece aimed at teachers managing a full class roster, not just a single test. ~1,200 words.
+5. **"Free Online Grade Checker: How to Check Your Grade in Seconds"** — supports `/easy-grader/` (secondary) and `/grade-calculator/`. Covers the remaining `grade checker` term from General Grader/Checker. Short, student-facing, FAQ-heavy. ~900 words. Lowest priority of the four gaps — only write after 1–3 are live, since it's the thinnest remaining term.
+
+**Deliberately not writing:** a second Grade Percentage post (cannibalizes `how-to-calculate-grade-percentage`), a second "grader for teachers" post (cannibalizes `grade-calculators-for-teachers` — instead, add an internal link from that existing post to the new `/easy-grader/` pillar and post #2 above once published).
+
+### 7.3 Sequencing and constraints
+
+- **Indexing blocker still applies (§1 finding 1).** New blog posts add zero value while the site isn't indexed — if GSC indexing still hasn't been requested, do that before or alongside writing post #1, not after.
+- Match the existing post pattern: `Person` byline (Muhammad Salman, linked to `/about/`) + `BlogPosting` schema, same as the §6.2 change — don't regress to the generic editorial-team byline.
+- Each new post's primary internal link goes to the pillar it supports, added near the top (not just buried in a "related tools" footer list), matching how `how-to-calculate-grade-percentage` was reordered in §6.4.
+- Suggested cadence: one post every 1–2 weeks in priority order above — small enough site that a burst of 4 posts in one day looks unnatural relative to current publish history (15 posts since launch).
+- Use the `seo-content-pipeline` skill to draft each post — feed it the primary keyword from the "Primary internal link" pillar above plus the secondary terms listed per post, so entity coverage comes from real competitor SERPs rather than the keyword list alone.
+
+## 8. Content drafts — 2026-08-21
+
+All 4 posts from §7.2 drafted via the `seo-content-pipeline` skill and saved to `content-drafts/<slug>-2026-08-21/` in this repo (`draft.md` + `research-notes.md` each, not yet turned into `.tsx` blog pages):
+
+| Slug | Title used | Words | FAQs |
+|---|---|---|---|
+| `easy-grader-explainer` | What Is an Easy Grader (EZ Grader)? How the Grading Chart Works | ~1,793 | 11 |
+| `quick-grader-method` | Quick Grader: Grade Tests Fast | ~1,180 | 11 |
+| `grading-scale-explained` | Grading Scale Explained: A–F to Percentages | ~2,360 | 11 |
+| `grade-checker` | Grade Checker: See Your Score Instantly | ~1,320 | 12 |
+
+**Open items resolved when publishing:**
+- Byline: no per-post byline field exists — `src/app/blog/[slug]/page.tsx` hardcodes the "Muhammad Salman" `Person` schema + editorial-note block for every post, so this was already consistent by construction; nothing to change per-post.
+- `quick-grader-method`'s grading-scale table was checked against `src/lib/grade.ts`'s `standard` preset (A 93/A− 90/B+ 87/B 83/B− 80/C+ 77/C 73/C− 70/D+ 67/D 63/D− 60/F 0): collapsing that preset's plus/minus bands to whole letters gives exactly A 90–100, B 80–89, C 70–79, D 60–69, F below 60 — the draft's numbers were already correct, no change needed.
+- `grading-scale-explained`'s Mount Holyoke/1897 story kept as "commonly cited," not asserted as fact, per the draft's own E-E-A-T flag.
+- The two 403'd competitor fetches are noted in each `research-notes.md`; no impact on the published copy.
+
+## 9. Blog posts published — 2026-08-21
+
+All 4 drafts from §8 converted into `BlogPost` entries in `src/lib/blog.ts` (markdown stripped, restructured into `sections`/`list`/`table`, FAQs kept as a final "Frequently Asked Questions" section — this site doesn't use per-post FAQPage schema, so FAQs render as regular prose Q&A, consistent with how the rest of the article body works) and are now live in the site build:
+
+| Slug | Category | Primary internal link (first in `relatedTools`) |
+|---|---|---|
+| `easy-grader-explainer` | Grading tools | `/easy-grader/` |
+| `quick-grader-method` | Grading tools | `/easy-grader/` |
+| `grading-scale-explained` | Grade policies | `/grading-scale/` |
+| `grade-checker` | Grading tools | `/easy-grader/` |
+
+- Added a new "Grading tools" category (purple palette, Percent icon) to `scripts/generate-blog-covers.mjs`; ran it to generate the 4 new cover SVGs in `public/images/blog/`.
+- `sitemap.ts` needed no changes — it derives blog URLs from `blogPosts` automatically.
+- Verified with `npm run typecheck` (clean) and `npm run build` (all 19 blog paths, including the 4 new ones, generated statically; confirmed present in `out/sitemap.xml` and linked from the blog index grid).
+- Not yet committed to git or deployed — sitting as local changes pending user review.
+- §7.2 item 4 (gradebook calculator post) was never in scope for this drafting run — only the 4 posts the user explicitly requested were drafted/published; it remains a future gap per §7.1.
+
+*Keyword mapping finalized 2026-08-11 (§4). Build session completed 2026-08-11 (§6). Blog strategy added 2026-08-21 (§7). Drafts written 2026-08-21 (§8). Drafts published to the live blog.ts/site build 2026-08-21 (§9).*
