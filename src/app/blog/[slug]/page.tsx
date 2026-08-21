@@ -69,6 +69,18 @@ export default async function BlogArticlePage({ params }: PageProps) {
           { "@type": "ListItem", position: 3, name: post.title, item: url },
         ],
       },
+      ...(post.faqs
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map(([question, answer]) => ({
+                "@type": "Question",
+                name: question,
+                acceptedAnswer: { "@type": "Answer", text: answer },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 
@@ -100,6 +112,20 @@ export default async function BlogArticlePage({ params }: PageProps) {
                   {section.table && <div className="reference-table-wrap"><table className="reference-table"><thead><tr>{section.table.headers.map((header) => <th key={header}>{header}</th>)}</tr></thead><tbody>{section.table.rows.map((row) => <tr key={row.join("-")}>{row.map((cell, index) => <td key={`${cell}-${index}`}>{index === row.length - 1 ? <strong>{cell}</strong> : cell}</td>)}</tr>)}</tbody></table></div>}
                 </section>
               ))}
+
+              {post.faqs && (
+                <section className="blog-content-section blog-article-faq">
+                  <h2>Frequently Asked Questions</h2>
+                  <div className="faq-list">
+                    {post.faqs.map(([question, answer]) => (
+                      <details key={question}>
+                        <summary>{question}<span>+</span></summary>
+                        <p>{answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )}
 
               <div className="editorial-note">
                 <span>WRITTEN BY</span>
