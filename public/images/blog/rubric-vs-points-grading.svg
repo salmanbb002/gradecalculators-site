@@ -1,0 +1,21 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="For teachers illustration">
+  <defs>
+    <linearGradient id="bg-rubric-vs-points-grading" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8fbf3" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="dots-rubric-vs-points-grading" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#0c9f72" opacity="0.16" />
+    </pattern>
+    <clipPath id="clip-rubric-vs-points-grading"><rect width="800" height="450" /></clipPath>
+  </defs>
+  <g clip-path="url(#clip-rubric-vs-points-grading)">
+    <rect width="800" height="450" fill="url(#bg-rubric-vs-points-grading)" />
+    <rect width="800" height="450" fill="url(#dots-rubric-vs-points-grading)" />
+    <circle cx="124.4" cy="109.7" r="141.4" fill="#7fd9b8" opacity="0.22" />
+    <circle cx="740.1" cy="359.7" r="116.9" fill="#0c9f72" opacity="0.16" />
+    <rect x="498.3" y="157.6" width="140" height="140" rx="30" fill="#ffffff" opacity="0.6" />
+    <rect x="504.3" y="163.6" width="128" height="128" rx="26" fill="#ffffff" stroke="#7fd9b8" stroke-width="1.5" />
+    <g transform="translate(536.2673055441337, 195.63434413267532) scale(2.6666666666666665)" fill="none" stroke="#0a8760" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20" /><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" /><path d="m7 21 5-5 5 5" /></g>
+  </g>
+</svg>

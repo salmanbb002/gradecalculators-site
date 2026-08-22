@@ -1,0 +1,21 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grade formulas illustration">
+  <defs>
+    <linearGradient id="bg-semester-grade-vs-final-grade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8fbf3" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="dots-semester-grade-vs-final-grade" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#0c9f72" opacity="0.16" />
+    </pattern>
+    <clipPath id="clip-semester-grade-vs-final-grade"><rect width="800" height="450" /></clipPath>
+  </defs>
+  <g clip-path="url(#clip-semester-grade-vs-final-grade)">
+    <rect width="800" height="450" fill="url(#bg-semester-grade-vs-final-grade)" />
+    <rect width="800" height="450" fill="url(#dots-semester-grade-vs-final-grade)" />
+    <circle cx="74.6" cy="141.1" r="188.1" fill="#7fd9b8" opacity="0.22" />
+    <circle cx="697.2" cy="355.9" r="107.9" fill="#0c9f72" opacity="0.16" />
+    <rect x="495.3" y="150.4" width="140" height="140" rx="30" fill="#ffffff" opacity="0.6" />
+    <rect x="501.3" y="156.4" width="128" height="128" rx="26" fill="#ffffff" stroke="#7fd9b8" stroke-width="1.5" />
+    <g transform="translate(533.3250811295147, 188.381628270261) scale(2.6666666666666665)" fill="none" stroke="#0a8760" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2" /></g>
+  </g>
+</svg>

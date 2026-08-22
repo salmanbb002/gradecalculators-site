@@ -89,6 +89,11 @@ const POSTS = [
   { slug: "quick-grader-method", category: "Grading tools" },
   { slug: "grading-scale-explained", category: "Grade policies" },
   { slug: "grade-checker", category: "Grading tools" },
+  { slug: "gradebook-calculator-guide", category: "Grading tools" },
+  { slug: "how-to-calculate-your-grade", category: "Grade formulas" },
+  { slug: "how-credit-hours-affect-your-gpa", category: "GPA basics" },
+  { slug: "rubric-vs-points-grading", category: "For teachers" },
+  { slug: "semester-grade-vs-final-grade", category: "Grade formulas" },
 ];
 
 // Deterministic hash so each slug always renders the same cover (stable across re-runs / diffs).

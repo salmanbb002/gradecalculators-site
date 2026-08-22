@@ -178,4 +178,24 @@ All 4 drafts from §8 converted into `BlogPost` entries in `src/lib/blog.ts` (ma
 - Not yet committed to git or deployed — sitting as local changes pending user review.
 - §7.2 item 4 (gradebook calculator post) was never in scope for this drafting run — only the 4 posts the user explicitly requested were drafted/published; it remains a future gap per §7.1.
 
+## 10. Blog posts published — 2026-08-22
+
+The remaining §7.2 gap (Gradebook Calculator) plus 4 additional posts identified by cross-referencing every pillar page against all 19 live posts' `relatedTools` links (not from the original keyword sheet — flagged as a judgment call at the time): `/how-to-calculate-grades/` had zero blog support at all, and `/college-gpa-calculator/`, `/final-grade-calculator/` only ever appeared as secondary links. Drafted via the `seo-content-pipeline` skill (5 parallel runs), converted into `BlogPost` entries in `src/lib/blog.ts`, and built/verified the same way as §9:
+
+| Slug | Category | Primary internal link (first in `relatedTools`) |
+|---|---|---|
+| `gradebook-calculator-guide` | Grading tools | `/gradebook-calculator/` |
+| `how-to-calculate-your-grade` | Grade formulas | `/how-to-calculate-grades/` |
+| `how-credit-hours-affect-your-gpa` | GPA basics | `/college-gpa-calculator/` |
+| `rubric-vs-points-grading` | For teachers | `/easy-grader/` |
+| `semester-grade-vs-final-grade` | Grade formulas | `/final-grade-calculator/` |
+
+- `how-to-calculate-your-grade`'s original assigned angle (combining multiple weighted categories) turned out to duplicate the existing `how-to-calculate-grade-percentage` post — the drafting run caught this and pivoted to a beginner step-by-step process walkthrough instead, which still fills the `/how-to-calculate-grades/` gap without cannibalizing.
+- `how-credit-hours-affect-your-gpa` cites a "GPA rose 2.81→3.28 since 1990" stat sourced as "commonly cited" from two independent competitor pages agreeing, not a primary source — worth a look if this ever needs a harder citation.
+- `rubric-vs-points-grading` deliberately excluded a "5–10 hours/week saved" stat that traced back to an AI-grading-tool vendor's own marketing rather than independent research.
+- Added the 5 new slugs to `scripts/generate-blog-covers.mjs` (reusing existing categories/palettes — no new category needed this time) and generated their cover SVGs.
+- Verified with `npm run typecheck` (clean) and `npm run build` (all 24 blog paths generated statically; confirmed present in `out/sitemap.xml`).
+- Pillar pages (`/gradebook-calculator/`, `/how-to-calculate-grades/`, etc.) were not edited — this site's internal linking runs one-directional, blog post → pillar via `relatedTools`, matching the pattern from §9; pillar pages don't pull blog posts back.
+- Draft source files remain in `content-drafts/<slug>-2026-08-22/` (`draft.md` + `research-notes.md`) for reference/audit trail.
+
 *Keyword mapping finalized 2026-08-11 (§4). Build session completed 2026-08-11 (§6). Blog strategy added 2026-08-21 (§7). Drafts written 2026-08-21 (§8). Drafts published to the live blog.ts/site build 2026-08-21 (§9).*
